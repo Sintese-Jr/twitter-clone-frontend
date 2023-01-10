@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/botaoAzul.css"
 
 export default function BotaoAzul(props) {
     return (
