@@ -10,16 +10,6 @@
   border: 0;
 }
 
-.follow-list * {
-  padding: 0;
-  margin: 0;
-}
-
-.botao-azul {
-  padding-left: 22px;
-  padding-right: 22px;
-}
-
 .follow-list {
   --max-width: 940px;
   --container-padding: 2.25rem;
