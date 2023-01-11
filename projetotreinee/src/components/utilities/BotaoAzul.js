@@ -10,8 +10,7 @@ export default function BotaoAzul(props) {
     )
 }
 
-/*
-Nota para facilitar o uso
+/*Nota para facilitar o uso
 Caso nescessitar do icone de adicionar usuário em seu componente, passar como 
 parâmetro na chamada do botão icone="fa-solid fa-user-plus". 
 */
