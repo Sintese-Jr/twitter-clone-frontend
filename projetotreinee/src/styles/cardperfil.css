@@ -34,6 +34,8 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 14vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .infobar > .botao-azul {
@@ -109,6 +111,7 @@
     margin-left: 14vw;
     width: 29.6vw;
     position: absolute;
+    padding-top: 5px;
     
 }
 
