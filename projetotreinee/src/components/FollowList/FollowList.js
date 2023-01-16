@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FollowBtn from "../utilities/BotaoAzul";
 
-import "./FollowList.css";
+import "../../styles/FollowList.css";
 
 // TODO: remover dados mockados e integrar com backend
 const userName = "Daniel Jensen";
