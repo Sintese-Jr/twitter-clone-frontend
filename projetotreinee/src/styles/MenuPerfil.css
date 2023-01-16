@@ -23,7 +23,7 @@
 
 .cardmenu {
     list-style: none;
-    background-color: #F2F2F2;
+    background-color: white;
     width: 11vw;
     height: 5vh;
     border-radius: 8px;
@@ -38,6 +38,9 @@
     cursor: pointer;
 }
 
+.cardmenu:hover{
+    background-color: #F2F2F2;
+}
 .iconemenu {
     display: flex;
     align-items: center;
