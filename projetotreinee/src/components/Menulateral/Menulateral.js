@@ -1,4 +1,4 @@
-import  '../styles/Menulateral.css'
+import '../../styles/Menulateral.css';
 import React from 'react';
 
 function Menulateral(props) {
