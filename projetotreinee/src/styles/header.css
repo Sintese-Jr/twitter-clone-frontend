@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* @font-face {
+    font-family: Poppins;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+} */
+
+body {
+    background: #F2F2F2;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    height: 9vh;
+    background: #FFFFFF;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    height: 5%;
+    margin: auto;
+    margin-left: 3%;
+}
+
+.paginas {
+    font-size: 2.2vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: auto;
+    color: #828282;
+    letter-spacing: -0.035em;
+    font-style: normal;
+    /* width: 30%; */
+    line-height: 21px; 
+}
+
+.tdespaco { 
+    display: table; 
+    float:left; 
+    margin-right: 5vw;
+}
+
+#book {
+    margin-right: 0vw;
+}
+
+.tdespaco:hover {
+    color: #2F80ED;
+    font-weight: 600;
+}
+
+#fotoPerfil {
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#nomeUsuario {
+    font-size: 1.8vh;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;
+}
+
+#seta {
+    height: 1.2vh;
+}
+
+.perfil {
+    position: absolute;
+    left: 85%;
+}
+
