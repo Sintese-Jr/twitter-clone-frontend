@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './images/tweeter.svg'
 import FotoPerfil from './images/perfil.jpg'
 import Seta from './images/seta.png'
+import '../../styles/header.css'
 
 function Header() {
     return(
