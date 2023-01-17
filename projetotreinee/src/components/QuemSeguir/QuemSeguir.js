@@ -14,8 +14,8 @@ function QuemSeguir() {
       <div className='TextoQuemSeguir'>
         Quem seguir
       </div>
-      <SugestaoSeguir nome="Gilberto Amauri" seguidores='9' fotoPerfil="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1oQMG4t94U8xxuBLkavwXOhsVdSHaAR7ttg&usqp=CAU"
-        fotoFundo="https://picsum.photos/266/77" bio="Eu sou o Gilberto ex-jogador de volêi pela seleção brasileira" />
+      <SugestaoSeguir nome="Michael Scott" seguidores='9' fotoPerfil="https://randomuser.me/api/portraits/lego/7.jpg"
+        fotoFundo="https://picsum.photos/266/77" bio="Dunder Mifflin regional manager. Apaixonado pela vida. Comediante e ator amador." />
       
     </div>
   );
