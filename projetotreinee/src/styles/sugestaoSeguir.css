@@ -1,0 +1,109 @@
+/* reset */
+@charset "UTF-8";
+
+/*Fonte Noto-Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Fonte Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --fonteNotoSans: "Noto Sans", sans-serif;
+  --fontePoppins: "Poppins", sans-serif;
+  --letterSpacingPadrao: -0.035em;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.FotoPerfil {
+  background-color: aqua;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 0.5em;
+}
+
+.FotoFundo {
+  width: 16.6212em;
+  height: 4.8034em;
+  border-radius: 0.5em;
+}
+
+.NomeSeguidoresFollow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.2em;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.TextoQuemSeguir {
+  padding-bottom: 0.5em;
+  padding-top: 0.8669em;
+  color: #4f4f4f;
+  font-weight: 600;
+  letter-spacing: var(--letterSpacingPadrao);
+}
+
+.Nome {
+  font-family: var(--fontePoppins);
+  font-size: 1em;
+  line-height: 1.5em;
+  /*padding-left: 1.0944em;*/
+  font-weight: 500;
+  letter-spacing: var(--letterSpacingPadrao);
+  align-self: flex-start;
+  white-space: nowrap;
+  max-width: 6.875em;
+}
+
+.Seguidores {
+  font-family: var(--fonteNotoSans);
+  color: #828282;
+  line-height: 1.0212em;
+  font-size: 0.75em;
+  /*padding-left: 1.0944em;*/
+  font-weight: 500;
+  letter-spacing: var(--letterSpacingPadrao);
+}
+
+.Bio {
+  max-width: 16.6212em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  color: #828282;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.1875em;
+  font-size: 0.875em;
+  font-weight: 500;
+  letter-spacing: var(--letterSpacingPadrao);
+}
+
+.NomeSeguidores {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.botao-azul {
+  font-size: 0.75em;
+  line-height: 1.0212em;
+  width: 5.9375em;
+  height: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  letter-spacing: var(--letterSpacingPadrao);
+}
