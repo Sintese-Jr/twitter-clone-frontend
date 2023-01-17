@@ -10,8 +10,8 @@ import '../../styles/QuemSeguir.css'
 function QuemSeguir() {
 
   return (
-    <div className="container">
-      <div className='textoQuemSeguir'>
+    <div className="Container">
+      <div className='TextoQuemSeguir'>
         Quem seguir
       </div>
       <SugestaoSeguir nome="Gilberto Amauri" seguidores='9' fotoPerfil="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1oQMG4t94U8xxuBLkavwXOhsVdSHaAR7ttg&usqp=CAU"

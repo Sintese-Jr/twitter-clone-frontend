@@ -49,7 +49,7 @@ html {
   gap: 0.5em;
 }
 
-.textoQuemSeguir {
+.TextoQuemSeguir {
   padding-bottom: 0.5em;
   padding-top: 0.8669em;
   color: #4f4f4f;
@@ -57,7 +57,7 @@ html {
   letter-spacing: var(--letterSpacingPadrao);
 }
 
-.nome {
+.Nome {
   font-family: var(--fontePoppins);
   font-size: 1em;
   line-height: 1.5em;
@@ -69,7 +69,7 @@ html {
   max-width: 6.875em;
 }
 
-.seguidores {
+.Seguidores {
   font-family: var(--fonteNotoSans);
   color: #828282;
   line-height: 1.0212em;

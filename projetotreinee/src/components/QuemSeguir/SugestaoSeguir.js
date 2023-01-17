@@ -4,13 +4,13 @@ import '../../styles/sugestaoSeguir.css'
 
 export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFundo}) {
     return (
-        <div className="sugestaoSeguir">
+        <div className="SugestaoSeguir">
             <hr />
             <div className="NomeSeguidoresFollow">
                 <img src={fotoPerfil} alt="Imagem de perfil" className="FotoPerfil"></img>
                 <div className="NomeSeguidores">
-                    <div className="nome">{nome}</div>
-                    <div className="seguidores">{seguidores} seguidores</div>
+                    <div className="Nome">{nome}</div>
+                    <div className="Seguidores">{seguidores} seguidores</div>
                 </div>
                 <BotaoAzul icone='fa-solid fa-user-plus' texto='Seguir' />
             </div>

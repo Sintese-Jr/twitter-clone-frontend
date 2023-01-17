@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-:root{
+:root {
   --fonteNotoSans: 'Noto Sans', sans-serif;
   --fontePoppins: 'Poppins', sans-serif;
 }
@@ -26,25 +26,19 @@
 body,
 html {
   height: 100%;
-  background-color: aqua;
-  display: flex;
+
+}
+
+.Container {
   align-items: center;
-  justify-content: center;
+  padding: 1.25em;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  max-width: 19.125em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.container{
-    align-items: center;
-    /*height: 32,3563em;
-    width: 19,125em; */
-    padding: 1.25em;
-    border-radius: 12px;
-    background-color: #FFFFFF;
-    max-width: 19.125em;
-    /*max-height: 32.3563em; */
+.TextoQuemSeguir {
+  padding-bottom: 0, 5em;
+  padding-top: 0, 8669em;
 }
-
-.textoQuemSeguir{
-    padding-bottom: 0,5em;
-    padding-top: 0,8669em;
-}
-
