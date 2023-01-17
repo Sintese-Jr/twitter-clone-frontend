@@ -1,0 +1,132 @@
+
+.tweet{
+    grid-column: 2/3;
+    grid-row: 2/-1;
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.post{
+    display: flex;
+    padding: 1.5em;
+    border-bottom: 0.1em solid #eee;
+    color: #4F4F4F;
+
+}
+
+.avatar{
+    width: 6em;
+    height: 6em;
+    flex-shrink: 0;
+    margin-right: 1.5em;
+}
+
+.avatar  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.userPost  h4{
+    font-size: 1.6em;
+    font-family: Poppins;
+    color: #000000;
+    padding-top: 0,5em;
+}
+
+.userPost  span{
+    font-size: 1em;
+    color: #BDBDBD;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.textoPost{
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+.imagemPost{
+    width: 54em;
+    height: 30em;
+}
+
+.imagemPost  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em ;
+}
+
+.imagemPost  span{
+   float: right;
+   font-family: 'Noto Sans', sans-serif;
+   color: #BDBDBD;
+   margin-left: 1em;
+   
+}
+
+
+.iconesPost{
+    margin-top: 3em;
+}
+
+
+.iconesPost  i{
+    font-size: 1.25em;
+    color: #4F4F4F;
+    margin-right: 1em;
+}
+
+.iconesPost span{
+    font-size: 1.2em;
+    color: #4F4F4F;
+    margin-right: 7.3em;
+}
+
+.comment{
+    display: flex;
+    padding-top: 2em;
+    border-bottom: 0.1em solid #eee;
+    color: #4F4F4F;
+}
+
+.imageComment{
+    width: 3em;
+    height: 3em;
+    flex-shrink: 0;
+    margin-right: 1.5em;
+}
+
+.imageComment  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.conteudoComment{
+   width: 100%; 
+}
+
+.conteudoComment  input{
+    display:inline-block;
+    outline:0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    width: 80%;
+    background: #FAFAFA;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px; 
+    height: 3em;
+ }
+
+ .conteudoComment  i{
+    font-size: 1.6em;
+    color: #BDBDBD;
+    margin-left: 1em;
+    border: none;
+    padding: 4px 10px
+}
