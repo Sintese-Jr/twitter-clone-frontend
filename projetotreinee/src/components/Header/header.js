@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from './images/tweeter.svg'
+import LogoTelaGrande from './images/tweeter.svg'
+import LogoTelaPequena from './images/tweeter-small.svg'
 import FotoPerfil from './images/perfil.jpg'
 import Seta from './images/seta.png'
 import '../../styles/header.css'
@@ -8,7 +9,7 @@ function Header() {
     return(
         <header>
             <div className='conteudo'>
-                <img src={Logo} alt="Logotipo Tweeter" className="logo"></img>
+                <img src={LogoTelaGrande} alt="Logotipo Tweeter" className="logo"></img>
                 <table className='paginas'>
                     <tr>
                         <td className='tdespaco'>Home</td>
