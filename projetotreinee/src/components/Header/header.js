@@ -10,6 +10,7 @@ function Header() {
         <header>
             <div className='conteudo'>
                 <img src={LogoTelaGrande} alt="Logotipo Tweeter" className="logo"></img>
+                <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
                         <td className='tdespaco'>Home</td>

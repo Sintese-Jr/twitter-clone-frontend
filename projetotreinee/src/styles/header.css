@@ -21,7 +21,11 @@
         position: absolute;
         height: 5%;
         margin: auto;
-        margin-left: 3%;
+        margin-left: 4%;
+    }
+
+    .logoPequena {
+        display: none;
     }
     
     .paginas {
@@ -92,10 +96,14 @@
     }
     
     .logo {
+        display: none;
+    }
+
+    .logoPequena {
         position: absolute;
         height: 5%;
         margin: auto;
-        margin-left: 3%;
+        margin-left: 4%;
     }
     
     .paginas {
