@@ -1,6 +1,6 @@
 import React from 'react'
-import Lupa from './images/search.svg'
-import 'import "../../styles/searchBar.css"'
+import Lupa from './images/search.png'
+import '../../styles/searchBar.css'
 
 function SearchBar () {
     return (
