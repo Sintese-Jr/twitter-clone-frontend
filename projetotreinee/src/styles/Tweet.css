@@ -1,24 +1,26 @@
 
 .tweet{
-    grid-column: 2/3;
-    grid-row: 2/-1;
-    background-color: #fff;
+    width: 52vw;
+    height: fit-content;
+    background-color: white;
     font-family: 'Noto Sans', sans-serif;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
 .post{
     display: flex;
     padding: 1.5em;
-    border-bottom: 0.1em solid #eee;
     color: #4F4F4F;
-
+    
 }
 
 .avatar{
-    width: 6em;
-    height: 6em;
+    width: 3.6vw;
+    height: 5.2vh;
     flex-shrink: 0;
-    margin-right: 1.5em;
+    margin-right: 15px;
 }
 
 .avatar  img{
@@ -29,73 +31,84 @@
 }
 
 .userPost  h4{
-    font-size: 1.6em;
+    font-size: 16px;
     font-family: Poppins;
     color: #000000;
-    padding-top: 0,5em;
 }
 
 .userPost  span{
-    font-size: 1em;
+    font-size: 12px;
     color: #BDBDBD;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .textoPost{
-    font-size: 1.4em;
+    font-size: 16px;
     margin-top: 1em;
     margin-bottom: 1em;
 
 }
 
+.conteudoPost {
+    width: 100%;
+}
+
 .imagemPost{
-    width: 54em;
-    height: 30em;
+    width: 100%;
+    height: fit-content;
 }
 
 .imagemPost  img{
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+    height: 40vh;
     object-fit: cover;
-    border-radius: 1em ;
+    border-radius: 1em;
 }
 
 .imagemPost  span{
    float: right;
+   font-size: 12px;
+   font-weight: 500;
    font-family: 'Noto Sans', sans-serif;
    color: #BDBDBD;
    margin-left: 1em;
+   margin-top: 5px;
    
 }
 
 
 .iconesPost{
-    margin-top: 3em;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
 .iconesPost  i{
-    font-size: 1.25em;
+    font-size: 14px;
     color: #4F4F4F;
-    margin-right: 1em;
+    margin-right: 5px;
 }
 
 .iconesPost span{
-    font-size: 1.2em;
+    font-size: 14px;
     color: #4F4F4F;
-    margin-right: 7.3em;
 }
 
 .comment{
     display: flex;
-    padding-top: 2em;
-    border-bottom: 0.1em solid #eee;
+    margin-top: 11px;
     color: #4F4F4F;
 }
 
 .imageComment{
-    width: 3em;
-    height: 3em;
+    width: 3.6vw;
+    height: 5.2vh;
     flex-shrink: 0;
     margin-right: 1.5em;
 }
@@ -115,18 +128,22 @@
     display:inline-block;
     outline:0;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 14px;
     width: 80%;
-    background: #FAFAFA;
     border: 1px solid #F2F2F2;
     border-radius: 8px; 
     height: 3em;
  }
 
  .conteudoComment  i{
-    font-size: 1.6em;
+    font-size: 15px;
     color: #BDBDBD;
     margin-left: 1em;
     border: none;
     padding: 4px 10px
+}
+
+.header-post {
+    display: flex;
+    align-items: center;
 }
