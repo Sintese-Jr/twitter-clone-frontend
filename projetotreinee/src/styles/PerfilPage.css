@@ -1,9 +1,11 @@
 .corpo-principal {
     width: 74.5vw;
-    height: 300vh;
+    height: fit-content;
     margin: auto;
     display: grid;
-    background-color: red;
     grid-template-columns: 1fr 2fr;
 }
 
+.tweet-tamanho > .tweet {
+    margin-bottom: 3vh;
+}
