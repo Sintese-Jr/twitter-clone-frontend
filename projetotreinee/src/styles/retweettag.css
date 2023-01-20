@@ -1,0 +1,17 @@
+.retweet-tag {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    color: #828282;
+    margin-bottom: 5px;
+}
+
+i {
+    margin-right: 5px;
+}
