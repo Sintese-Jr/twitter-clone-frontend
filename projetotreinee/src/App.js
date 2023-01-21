@@ -2,6 +2,7 @@ import React from "react";
 import {Link, Routes, Route} from 'react-router-dom'
 import HomePage from "./pages/Home";
 import PerfilPage from "./pages/Perfil";
+import Bookmarks from "./pages/Bookmarks";
 
 export default function App() {
     return (
@@ -9,7 +10,7 @@ export default function App() {
             <Route path="/" element={<HomePage />}/>
             <Route path="/perfil" element={<PerfilPage />}/>
             <Route path="/explore"/>
-            <Route path="/bookmarks"/>
+            <Route path="/bookmarks" element={<Bookmarks />}/>
         </Routes>
     )
 }
