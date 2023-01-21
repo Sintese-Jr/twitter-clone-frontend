@@ -1,0 +1,13 @@
+.pagina-principal{
+    display: grid;
+    margin-top:44.05px;
+    margin-left: 184px;
+    height: fit-content;
+    grid-template-columns: 1fr 2fr;
+}
+
+.tweet-tamanho{
+    margin-right: 210px;    
+}
+
+
