@@ -69,13 +69,27 @@
         color: #333333;
     }
     
-    #seta {
-        height: 1.2vh;
-    }
-    
     .perfil {
         position: absolute;
         left: 85%;
+    }
+
+    #menuPerfil {
+        position: absolute;
+        left: 84%;
+        padding-top: 0.5%;
+    }
+
+    .aparecerSeta {
+        height: 1.5vh;
+    }
+
+    .desaparecerSeta {
+        display: none;
+    }
+
+    .desaparecerMenu {
+        display: none;
     }
 }
 
