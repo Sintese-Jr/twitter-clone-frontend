@@ -2,21 +2,25 @@ import React from "react";
 import "../../styles/Tweet.css"
 import Perfil from "./images/perfil.jpg"
 import Post from "./images/imagemPost.png"
+import RespostaTweet from "../RespostaTweet/RespostaTweet"
+import {Link} from "react-router-dom"
 
 export default function Tweet() {
 
     return (
         <div className="tweet">
             <div className="conteudoPost">
-                <div className="header-post">
-                    <div className="avatar">
-                        <img src={Perfil}/>
+                <Link to="/perfil">
+                    <div className="header-post">
+                        <div className="avatar">
+                            <img src={Perfil}/>
+                        </div>
+                        <div className="userPost">
+                            <h4>Thomas Shelby</h4>
+                            <span> 17 jan at 00:08</span>
+                        </div>
                     </div>
-                    <div className="userPost">
-                        <h4>Thomas Shelby</h4>
-                        <span> 17 jan at 00:08</span>
-                    </div>
-                </div>
+                </Link>
                 <p className="textoPost">Traveling- it leaves you speachless, then turns you into a storyteller.</p>
                 <div className = "imagemPost">
                     <img src={Post}/>
@@ -41,6 +45,7 @@ export default function Tweet() {
                         </form>
                     </div>
                 </div>
+                <RespostaTweet />
             </div>
         </div>
     );

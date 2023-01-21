@@ -81,7 +81,7 @@
     display: flex;
     margin-top: 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     padding-top: 10px;
@@ -104,6 +104,9 @@
     display: flex;
     margin-top: 11px;
     color: #4F4F4F;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F2F2F2;
+    margin-bottom: 10px;
 }
 
 .imageComment{

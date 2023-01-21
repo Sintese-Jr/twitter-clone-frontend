@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Tweetar.css"
+import "../../styles/Tweet.css"
 import Perfil from "./images/perfil.jpg"
 
 export default function Tweetar() {

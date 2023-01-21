@@ -9,3 +9,7 @@
 .tweet-tamanho > .tweet {
     margin-bottom: 3vh;
 }
+
+header {
+    margin-bottom: 0;
+}

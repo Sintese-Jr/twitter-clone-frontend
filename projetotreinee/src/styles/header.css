@@ -53,6 +53,7 @@
     .tdespaco:hover {
         color: #2F80ED;
         font-weight: 600;
+        cursor: pointer;
     }
     
     #fotoPerfil {

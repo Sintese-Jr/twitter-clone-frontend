@@ -12,21 +12,18 @@
 .respostaTweet {
     display: flex;
     max-width: 1300px;
-    padding: 0.5rem;
 }
 
 .fotoPerfil {
-    width: 6rem;
-    height: 6rem;
+    width: 6.6vw;
+    height: 5.8vh;
     padding-right: 0.5rem;
     display: flex;
 }
 
 .fotoPerfil img {
-    margin-left: auto;
-    min-width: 2rem;
-    width: 2rem;
-    height: 2rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 0.4rem;
 }

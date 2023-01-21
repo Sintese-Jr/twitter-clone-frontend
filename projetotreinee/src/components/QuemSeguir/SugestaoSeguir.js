@@ -1,5 +1,5 @@
-import BotaoAzul from "../utilities/BotaoAzul.js";
 import '../../styles/sugestaoSeguir.css'
+import BotaoAzulPequeno from "../utilities/BotaoAzulPequeno.js";
 
 
 export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFundo}) {
@@ -12,7 +12,7 @@ export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFu
                     <div className="Nome">{nome}</div>
                     <div className="Seguidores">{seguidores} seguidores</div>
                 </div>
-                <BotaoAzul icone='fa-solid fa-user-plus' texto='Seguir' />
+                <BotaoAzulPequeno icone='fa-solid fa-user-plus' texto='Seguir' />
             </div>
             <div>
                 <p className="Bio">{bio}</p>

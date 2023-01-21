@@ -16,6 +16,8 @@ function QuemSeguir() {
       </div>
       <SugestaoSeguir nome="Michael Scott" seguidores='9' fotoPerfil="https://randomuser.me/api/portraits/lego/7.jpg"
         fotoFundo="https://picsum.photos/266/77" bio="Dunder Mifflin regional manager. Apaixonado pela vida. Comediante e ator amador." />
+      <SugestaoSeguir nome="Michael Scott" seguidores='9' fotoPerfil="https://randomuser.me/api/portraits/lego/7.jpg"
+        fotoFundo="https://picsum.photos/266/77" bio="Dunder Mifflin regional manager. Apaixonado pela vida. Comediante e ator amador." />
       
     </div>
   );

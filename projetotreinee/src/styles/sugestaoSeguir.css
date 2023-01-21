@@ -98,12 +98,3 @@ html {
   flex-grow: 1;
 }
 
-.botao-azul {
-  font-size: 0.75em;
-  line-height: 1.0212em;
-  width: 5.9375em;
-  height: 2em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  letter-spacing: var(--letterSpacingPadrao);
-}

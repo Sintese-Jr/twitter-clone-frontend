@@ -1,0 +1,26 @@
+.corpo-principal-home {
+    width: 74.5vw;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0 20px;
+    margin-top: 4vh;
+}
+
+.tweet-tamanho-home > .tweet {
+    margin-bottom: 3vh;
+}
+
+.quem-seguir {
+    margin-top: 4vh;
+}
+
+.SugestaoSeguir {
+    margin-bottom: 1vh;
+}
+
+.home {
+    color: #2F80ED;
+    font-weight: 600;
+}

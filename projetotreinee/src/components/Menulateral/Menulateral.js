@@ -3,7 +3,7 @@ import React from 'react';
 
 function Menulateral(props) {
   return (
-    <div class="container">
+    <div class="container-menu">
         <div class="container2">
             <p class="canto"></p>
             <p class="tweets">{props.primeiro}</p>  
