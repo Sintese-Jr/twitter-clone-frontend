@@ -6,7 +6,7 @@ import Menulateral from "../components/Menulateral/Menulateral";
 import Tweet from "../components/Tweet/Tweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
 
-export default function Perfil() {
+export default function PerfilPage() {
     return (
         <body>
             <Header />

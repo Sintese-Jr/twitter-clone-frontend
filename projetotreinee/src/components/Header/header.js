@@ -4,6 +4,7 @@ import LogoTelaPequena from './images/tweeter-small.svg'
 import FotoPerfil from './images/perfil.jpg'
 import Seta from './images/seta.png'
 import '../../styles/header.css'
+import {Link} from "react-router-dom"
 
 function Header() {
     return(
@@ -13,9 +14,9 @@ function Header() {
                 <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
-                        <td className='tdespaco'>Home</td>
-                        <td className='tdespaco'>Explore</td>
-                        <td className='tdespaco' id='book'>Bookmarks</td>
+                        <td className='tdespaco home'><Link to="/">Home</Link></td>
+                        <td className='tdespaco explore'><Link to="/explore">Explore</Link></td>
+                        <td className='tdespaco bookmarks' id='book'><Link to="/bookmarks">Bookmarks</Link></td>
                     </tr>
                 </table>
 
