@@ -3,9 +3,9 @@ import "../../styles/botaoAzul.css"
 
 export default function BotaoAzul(props) {
     return (
-        <div className="botao-azul">
+        <div className="botao-retweet">
             <i className={props.icone}></i>
-            <p className="texto-botao-azul">{props.texto}</p>
+            <p className="texto-botao-retweet">{props.texto}</p>
         </div>
     )
 }
