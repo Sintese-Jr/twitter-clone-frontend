@@ -1,0 +1,13 @@
+    .principalExplore {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 74.5vw;
+        height: fit-content;
+        gap: 0 1.2rem;
+        margin: auto;
+        margin-top: 6vh;
+    }
+
+    .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
+        margin-bottom: 3vh;
+    }
