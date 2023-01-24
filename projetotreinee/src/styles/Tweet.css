@@ -161,3 +161,7 @@
     display: flex;
     align-items: center;
 }
+
+.retweeted{
+    color: #27AE60;
+}

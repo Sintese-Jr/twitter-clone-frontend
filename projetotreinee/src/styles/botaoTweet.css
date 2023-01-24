@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*Fonte Noto-Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fontebotao: 'Noto Sans', sans-serif;
+    --corbotaotweet: #fff;
+}
+
+.botao-retweet {
+    width: 130px;
+    height: 32px;
+    background-color: var(--corbotaotweet);
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-retweet:hover{
+    background-color: #F2F2F2;
+}
+
+.fa-user-plus {
+    color: white;
+    font-size: 12px;
+    margin-right: 3px;
+    background-color: inherit;
+}
+
+.texto-botao-tweet {
+    color: #4F4F4F;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    font-family: var(--fontebotao);
+}
+
+.verde .fa-retweet {
+    color: #27AE60;
+}
+
+.verde {
+    color: #27AE60;
+}
+
+.vermelho .fa-heart {
+    color: #EB5757;
+}
+
+.vermelho{
+    color: #EB5757;
+}
+
+.azul .fa-bookmark{
+    color:#2D9CDB;
+}
+
+.azul{
+    color: #2D9CDB;
+}

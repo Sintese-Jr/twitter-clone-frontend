@@ -17,7 +17,9 @@
   letter-spacing: -0.035em;
   text-align: left;
   margin-bottom: 1.8em;
+  cursor: pointer;
 }
+
 
 .Hashtag {
   font-family: var(--fontePoppins);

@@ -72,6 +72,7 @@
     border:none;
     width: 6em;
     height: 2em;
+    cursor: pointer;
 }
 
 .bottom-part span {
@@ -95,10 +96,15 @@
     display: flex;
     align-items: center;
     width: fit-content;
+    cursor: pointer;
 }
 
 .area-icone-tweetar {
     display: flex;
     align-items: center;
     margin-left: 4.5vw;
+}
+
+.area-icone-tweetar i{
+    cursor: pointer;
 }
