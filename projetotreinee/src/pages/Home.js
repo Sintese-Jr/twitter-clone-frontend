@@ -5,6 +5,7 @@ import Trends from "../components/Trends/trends"
 import Tweet from "../components/Tweet/Tweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
 import QuemSeguir from "../components/QuemSeguir/QuemSeguir"
+import Tweetar from "../components/Tweetar/Tweetar"
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <Header />
             <div className="corpo-principal-home">
                 <div className="tweet-tamanho-home">
+                    <Tweetar />
                     <RetweetTag nome="Daniela Jensen" />
                     <Tweet />
                     <Tweet />
