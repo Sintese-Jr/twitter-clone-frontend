@@ -16,7 +16,7 @@ export default function InfoBar(props) {
                 <p className="followinguser"><span>{props.followingnomeuser}</span> Following</p>
                 <p className="followersuser"><span>{props.followersuser}</span> Followers</p>
             </div>
-            <div onClick={handleClick} className="botao-azul">
+            <div onClick={handleClick} className="botao">
                 {seguiu === false && <BotaoAzul texto="Seguir" icone="fa-solid fa-user-plus" />}
                 {seguiu === true && <BotaoAzul texto="Seguindo"  />}
             </div>
