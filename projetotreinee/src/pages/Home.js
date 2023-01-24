@@ -5,7 +5,7 @@ import Trends from "../components/Trends/trends"
 import Tweet from "../components/Tweet/Tweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
 import QuemSeguir from "../components/QuemSeguir/QuemSeguir"
-import Tweetar from "../components/Tweetar/Tweetar"
+import Tweetar from "../components/Tweetar/tweetar"
 
 export default function HomePage() {
     return (
