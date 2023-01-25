@@ -1,45 +1,66 @@
+@charset "UTF-8";
+
+/*Fonte Noto-Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*Fonte Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --fontepagina: "Noto Sans", sans-serif;
+  --fontepoppins: "Poppins", sans-serif;
+}
+
+.tweetar {
+    width: 52vw;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3vh;
+}
+
 .feeds-content{
     font-family: 'Noto Sans', sans-serif;
-    display: grid;
-    grid-template-columns: minmax(5em, 1fr) 60em 40em minmax(5em, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    padding-top: 2.5em;
 }
 
 .feeds-header{
-    grid-column:  2/3;
-    grid-row: 1/2;
     background-color: #fff;
-    margin-top: 1.5em;
 }
 .header-top{
-    font-family: Poppins;
+    font-family: var(--fontepoppins);
     display: flex;
-    border-bottom: 0.1em solid;
+    border-bottom: 0.1em solid #E0E0E0;
 }
 .header-top h4{
-    font-size: 1.6em;
+
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .header-img-wrapper{
-    width: 6em;
-    height: 6em;
-    margin-left: 23.6em;
-    margin-right: 1.5em;
+    width: 50vw;
+    display: flex;
+    align-items: center;
 }
 
 .header-img-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 3.8vw;
+    height: 6.4vh;
+    margin-right: 10px;
     object-fit: cover;
     border-radius: 10%;
 }
 
 .bottom-part {
     font-family:'Noto Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 16px;
+    font-weight: 500;
     color: #2F80ED;
-    margin-left: 21em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .bottom-part button {
@@ -51,7 +72,7 @@
     border:none;
     width: 6em;
     height: 2em;
-    margin-left: 32em;
+    cursor: pointer;
 }
 
 .bottom-part span {
@@ -61,15 +82,29 @@
 .header-post{
     display: flex;
     align-items: center;
-    padding: 1em;
     border-bottom: 0.1em;
 }
 
 .header-post input{
     font-family:'Noto Sans', sans-serif;
     font-size: 1.6em;
-    width: 33.5em;
-    height: 6em;
+    height: 10vh;
     border: none;
 }
 
+.everyonecanreply {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.area-icone-tweetar {
+    display: flex;
+    align-items: center;
+    margin-left: 4.5vw;
+}
+
+.area-icone-tweetar i{
+    cursor: pointer;
+}
