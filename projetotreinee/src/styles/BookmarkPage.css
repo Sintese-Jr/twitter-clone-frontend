@@ -2,8 +2,10 @@
     display: grid;
     margin-top:44.05px;
     margin-left: 184px;
+    width: 74.5vw;
     height: fit-content;
     grid-template-columns: 1fr 2fr;
+    grid-gap: 0 20px;
 }
 
 .tweet-tamanho{

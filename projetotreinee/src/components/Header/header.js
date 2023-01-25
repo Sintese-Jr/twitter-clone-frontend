@@ -6,6 +6,8 @@ import Seta from './images/seta.png'
 import '../../styles/header.css'
 import SetaCima from './images/setaCima.png'
 import MenuPerfil from '../MenuPerfil/MenuPerfil'
+import {Link, NavLink} from "react-router-dom"
+
 
 function Header() {
 
@@ -64,9 +66,9 @@ function Header() {
                 <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
-                        <td className='tdespaco'>Home</td>
-                        <td className='tdespaco'>Explore</td>
-                        <td className='tdespaco' id='book'>Bookmarks</td>
+                        <td className='tdespaco home'><NavLink to="/">Home</NavLink></td>
+                        <td className='tdespaco explore'><NavLink to="/explore">Explore</NavLink></td>
+                        <td className='tdespaco bookmarks' id='book'><NavLink to="/bookmarks">Bookmarks</NavLink></td>
                     </tr>
                 </table>
 

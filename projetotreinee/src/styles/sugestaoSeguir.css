@@ -98,3 +98,8 @@ html {
   flex-grow: 1;
 }
 
+.Botao{
+  user-select: none;
+  color: #FFF;
+}
+
