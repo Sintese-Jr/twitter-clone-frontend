@@ -10,7 +10,7 @@ import Tweet from '../components/Tweet/Tweet';
 export default function explore (props) {
     return (
         <body>
-            <Header />
+            <Header tipo="explore"/>
             <div className="principalExplore">
                 <Menulateral 
                     primeiro="Top"

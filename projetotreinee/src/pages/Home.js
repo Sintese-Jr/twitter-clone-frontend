@@ -10,7 +10,7 @@ import Tweetar from "../components/Tweetar/tweetar"
 export default function HomePage() {
     return (
         <body>
-            <Header />
+            <Header tipo="home"/>
             <div className="corpo-principal-home">
                 <div className="tweet-tamanho-home">
                     <Tweetar />

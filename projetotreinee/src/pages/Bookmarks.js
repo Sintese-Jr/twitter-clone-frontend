@@ -8,7 +8,7 @@ import Tweet from "../components/Tweet/Tweet.js"
 export default function BookmarksPage() {
     return (
         <body>
-            <Header/>
+            <Header tipo="bookmarks"/>
                 <div className="pagina-principal">
                     <Menulateral 
                         primeiro="Tweets"

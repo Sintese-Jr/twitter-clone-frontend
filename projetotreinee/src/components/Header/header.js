@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom/client';
 import LogoTelaGrande from './images/tweeter.svg'
 import LogoTelaPequena from './images/tweeter-small.svg'
 import FotoPerfil from './images/perfil.jpg'
@@ -59,22 +60,26 @@ function Header(props) {
         fotoPrimaria.classList.add('aparecerFoto');
     }
     
-    // switch (props.tipo) {
-    //     case "home":
-    //         const linkHome = document.getElementById("linkHome");
-    //         linkHome.classList.add('selecionado');
-    //         break;
-    
-    //     case "explore":
-    //         const linkExplore = document.getElementById("linkExplore");
-    //         linkExplore.classList.add('selecionado');
-    //         break;
+    const tipoPagina = props.tipo;
 
-    //     case "bookmarks":
-    //         const linkBookmarks = document.getElementById("linkBook");
-    //         linkBookmarks.classList.add('selecionado');
-    //         break;
-    // }
+    function paginaAtual() {
+        const linkHome = document.getElementById("linkHome");
+        const linkExplore = document.getElementById("linkExplore");
+        const linkBookmarks = document.getElementById("linkBook");
+    
+        if (tipoPagina === "home") {
+            linkHome.classList.add('selecionado');
+
+        } else if (tipoPagina === "explore") {
+            linkExplore.classList.add('selecionado');
+
+        } else if (tipoPagina === "bookmarks") {
+            linkBookmarks.classList.add('selecionado');
+
+        } else {
+
+        }    
+    }
     
     return(
         <header>
@@ -83,13 +88,13 @@ function Header(props) {
                 <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
-                        <td className='tdespaco home'><NavLink to="/">Home</NavLink></td>
-                        <td className='tdespaco explore'><NavLink to="/explore">Explore</NavLink></td>
-                        <td className='tdespaco bookmarks' id='book'><NavLink to="/bookmarks">Bookmarks</NavLink></td>
+                        <td className='tdespaco' id='linkHome'><NavLink to="/">Home</NavLink></td>
+                        <td className='tdespaco' id='linkExplore'><NavLink to="/explore">Explore</NavLink></td>
+                        <td className='tdespaco' id='linkBook'><NavLink to="/bookmarks">Bookmarks</NavLink></td>
                     </tr>
                 </table>
 
-                <table className='perfil'>
+                <table className='perfil' onLoad={paginaAtual}>
                     <tr>
                         <td className='tdespacoPerfil'><img src={FotoPerfil} alt="Foto Perfil" id="fotoPerfilPrimaria" className='aparecerFoto' onClick={abrirPerfilMobile}></img></td>
                         <td className='tdespacoPerfil'><img src={FotoPerfil} alt="Foto Perfil" id="fotoPerfilSecundaria" className='desaparerFoto' onClick={fecharPerfilMobile}></img></td>
@@ -105,5 +110,7 @@ function Header(props) {
         </header>
     );
 }
+
+
 
 export default Header;

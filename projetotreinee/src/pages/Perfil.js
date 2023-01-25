@@ -9,7 +9,7 @@ import RetweetTag from "../components/utilities/RetweetTag";
 export default function PerfilPage() {
     return (
         <body>
-            <Header />
+            <Header tipo="perfil"/>
             <CardPerfil />
             <div className="corpo-principal">
                 <Menulateral 
