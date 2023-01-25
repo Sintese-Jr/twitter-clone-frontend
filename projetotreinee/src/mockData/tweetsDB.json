@@ -1,0 +1,131 @@
+{
+    "00020001" : {
+        "writerId" : "0002",
+        "date": "17 jan at 00:05",
+        "text": "Traveling- it leaves you speachless, then turns you into a storyteller",
+        "imagem": "00020001.png",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0004",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0002",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+    },
+    "00030001" : {
+        "writerId" : "0003",
+        "date": "23 feb at 10:45",
+        "text": "O Palmeiras não tem mundial",
+        "imagem": "00030001.jpg",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0002",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0002",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+        
+    },
+    "00030002" : {
+        "writerId" : "0003",
+        "date": "19 jan at 11:05",
+        "text": "Que lugar incrível!",
+        "imagem": "00030002.jpg",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0003",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0004",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+    },
+    "00040001" : {
+        "writerId" : "0004",
+        "date": "10 mar at 03:07",
+        "text": "A força da natureza é assustadora...",
+        "imagem": "00040001.jpg",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0002",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0003",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+    },
+    "00050001" : {
+        "writerId" : "0005",
+        "date": "18 set at 20:05",
+        "text": "A economia global vem enfrentando desafios enormes...",
+        "imagem": "00050001.jpg",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0002",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0003",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+    },
+    "00050002" : {
+        "writerId" : "0005",
+        "date": "04 jun at 23:09",
+        "text": "Sonho de consumo ou exagero?",
+        "imagem": "00050002.jpg",
+        "saves": 0,
+        "retweets": 0,
+        "comments": 0,
+        "answers": [
+            {
+                "writerId":  "0002",
+                "aswer": "Muito bom!",
+                "likes": 0
+            },
+            {
+                "writerId":  "0003",
+                "aswer": "Muito Ruim :(",
+                "likes": 0
+            }
+        ]
+    }
+
+
+}
