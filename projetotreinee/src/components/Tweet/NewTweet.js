@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/Tweet.css"
 import RespostaTweet from "../RespostaTweet/RespostaTweet"
 import {Link} from "react-router-dom"
+import BotaoTweet from '../utilities/BotaoTweet';
 
 export default function Tweet(props) {
 
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
-    const imagemPost = require(`../../images/imagensPosts/${props.imagem}`);
+    const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
+    
+    
+    const [curtiu, setCurtiu] = useState(false);
+    const [retweetou, setRetweet] = useState(false);
+    const [salvou, setSalvou] = useState(false);
+
+    function handleClickRetweet() {
+        if (retweetou) setRetweet(false);
+        else setRetweet(true);
+    }
+    function handleClickCurtir() {
+        if (curtiu) setCurtiu(false);
+        else setCurtiu(true);
+    }
+
+    function handleClickSalvou() {
+        if (salvou) setSalvou(false);
+        else setSalvou(true);
+    }
 
     return (
         <div className="tweet">
             <div className="conteudoPost">
-                <Link to="/perfil">
+                <Link to={`/perfil/${props.writerId}`}>
                     <div className="header-post">
                         <div className="avatar">
                             <img src={imagemPerfil}/>
@@ -24,16 +44,29 @@ export default function Tweet(props) {
                 </Link>
                 <p className="textoPost">{props.text}</p>
                 <div className = "imagemPost">
-                    <img src={imagemPost}/>
+                    {imagemPost ? <img src={imagemPost}/> : 
+                    <br></br>}
                     <span>{props.comments} comments</span>
                     <span>{props.retweets} Retweets</span>
                     <span>{props.saves} saved</span>
                 </div>
-                <div className = "iconesPost">
-                    <div><i className="far fa-comment"></i><span>Comments</span> </div>
-                    <div><i className="fa-solid fa-retweet"></i><span>Retweets</span></div>
-                    <div><i className="fa-regular fa-heart"></i><span> Likes</span></div>
-                    <div><i className="fa-regular fa-bookmark"></i><span> Saved</span></div>
+                <div className="iconesPost">
+
+                    <BotaoTweet icone="far fa-comment" texto="Comments" alt="Comentarios" />
+
+                    <div onClick={handleClickRetweet} className="retweet">
+                        {retweetou === false && <BotaoTweet icone="fa-solid fa-retweet" texto="Retweet" alt="Retweet" />}
+                        {retweetou === true && <BotaoTweet className="retweeted" icone="fa-solid fa-retweet" cor="verde" texto="Retweeted" alt="Retweeted" />}
+                    </div>
+                    <div onClick={handleClickCurtir}>
+                        {curtiu === false && <BotaoTweet icone="fa-regular fa-heart" texto="Like" alt="Likes" />}
+                        {curtiu === true && <BotaoTweet icone="fa-regular fa-heart" cor="vermelho" texto="Liked" alt="Liked" />}
+                    </div>
+                    <div onClick={handleClickSalvou}>
+                        {salvou === false && <BotaoTweet icone="fa-regular fa-bookmark" texto="Save" alt="Salvar" />}
+                        {salvou === true && <BotaoTweet icone="fa-regular fa-bookmark" cor="azul" texto="Saved" alt="Salvo" />}
+                    </div>
+
                 </div>
                 <div className="comment">
                     <div className="imageComment">

@@ -1,12 +1,15 @@
 import React from "react";
 import "../../styles/MenuPerfil.css"
 import CardMenu from "./menuComponents/CardMenu";
+import {Link} from "react-router-dom";
 
 export default function MenuPerfil() {
 
     return (
         <div className="menuperfil">
-            <CardMenu icone="fa-solid fa-circle-user" texto="My Profile" cor="gray"/>
+            <Link to="../perfil/root">
+                <CardMenu icone="fa-solid fa-circle-user" texto="My Profile" cor="gray"/>
+            </Link>
             <CardMenu icone ="fa-solid fa-user-group" texto="Group Chat" cor="gray"/>
             <CardMenu icone="fa-solid fa-gear" texto="Settings" cor="black"/>
             <br></br>

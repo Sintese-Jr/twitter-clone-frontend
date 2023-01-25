@@ -26,7 +26,10 @@ export default function HomePage() {
 
     return (
         <body>
-            <Header />
+            <Header 
+                nome={users["root"].nome} 
+                fotoPerfil={users["root"].fotoPerfil}
+            />
             <div className="corpo-principal-home">
                 <div className="tweet-tamanho-home">
                     <Tweetar />

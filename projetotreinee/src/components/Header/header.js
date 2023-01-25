@@ -9,7 +9,9 @@ import MenuPerfil from '../MenuPerfil/MenuPerfil'
 import {Link, NavLink} from "react-router-dom"
 
 
-function Header() {
+function Header(props) {
+
+    const fotoPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
 
     function abrir() {
         const menuPerfil = document.getElementById("menuPerfil");
@@ -74,9 +76,9 @@ function Header() {
 
                 <table className='perfil'>
                     <tr>
-                        <td className='tdespacoPerfil'><img src={FotoPerfil} alt="Foto Perfil" id="fotoPerfilPrimaria" className='aparecerFoto' onClick={abrirPerfilMobile}></img></td>
-                        <td className='tdespacoPerfil'><img src={FotoPerfil} alt="Foto Perfil" id="fotoPerfilSecundaria" className='desaparerFoto' onClick={fecharPerfilMobile}></img></td>
-                        <td className='tdespacoPerfil' id="nomeUsuario">Nome do usuário</td>
+                        <td className='tdespacoPerfil'><img src={fotoPerfil} alt="Foto Perfil" id="fotoPerfilPrimaria" className='aparecerFoto' onClick={abrirPerfilMobile}></img></td>
+                        <td className='tdespacoPerfil'><img src={fotoPerfil} alt="Foto Perfil" id="fotoPerfilSecundaria" className='desaparerFoto' onClick={fecharPerfilMobile}></img></td>
+                        <td className='tdespacoPerfil' id="nomeUsuario">{props.nome}</td>
                         <td className='tdespacoPerfil'><img src={Seta} alt="Seta para baixo" id="seta" className='aparecerSeta' onClick={abrir}></img></td>
                         <td className='tdespacoPerfil'><img src={SetaCima} alt="Seta para cima" id="setaCima" className='desaparecerSeta' onClick={fechar}></img></td>
                     </tr>
