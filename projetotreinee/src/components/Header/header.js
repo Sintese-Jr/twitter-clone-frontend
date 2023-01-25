@@ -7,7 +7,7 @@ import '../../styles/header.css'
 import SetaCima from './images/setaCima.png'
 import MenuPerfil from '../MenuPerfil/MenuPerfil'
 
-function Header() {
+function Header(props) {
 
     function abrir() {
         const menuPerfil = document.getElementById("menuPerfil");
@@ -57,6 +57,23 @@ function Header() {
         fotoPrimaria.classList.add('aparecerFoto');
     }
     
+    // switch (props.tipo) {
+    //     case "home":
+    //         const linkHome = document.getElementById("linkHome");
+    //         linkHome.classList.add('selecionado');
+    //         break;
+    
+    //     case "explore":
+    //         const linkExplore = document.getElementById("linkExplore");
+    //         linkExplore.classList.add('selecionado');
+    //         break;
+
+    //     case "bookmarks":
+    //         const linkBookmarks = document.getElementById("linkBook");
+    //         linkBookmarks.classList.add('selecionado');
+    //         break;
+    // }
+    
     return(
         <header>
             <div className='conteudo'>
@@ -64,9 +81,9 @@ function Header() {
                 <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
-                        <td className='tdespaco'>Home</td>
-                        <td className='tdespaco'>Explore</td>
-                        <td className='tdespaco' id='book'>Bookmarks</td>
+                        <td className='tdespaco' id='linkHome'>Home</td>
+                        <td className='tdespaco' id='linkExplore'>Explore</td>
+                        <td className='tdespaco' id='linkBook'>Bookmarks</td>
                     </tr>
                 </table>
 
@@ -84,7 +101,7 @@ function Header() {
                 <MenuPerfil></MenuPerfil>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;
