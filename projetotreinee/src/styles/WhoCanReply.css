@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%22");
+
+
+:root {
+  --fontePoppins: 'Poppins', sans-serif;
+  --letterSpacingPadrao: -0.035em;
+}
+
+.who{
+font-family: var(--fontePoppins);
+font-size: 16px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: -0.035em;
+text-align: left;
+color: #4F4F4F;
+}
+
+.choose{
+height: 12px;
+font-family:var(--fonteNotoSans);
+font-size: 12px;
+line-height: 0px;
+letter-spacing: -0.035em;
+text-align: left;
+padding-top: 10px;
+padding-bottom: 16px;
+color: #828282
+}
+
+
+.container{
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 12px ;
+  padding-top: 10px;
+  border-radius: 12px;
+  border: 1px solid #E0E0E0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  background-color:  #FFFFFF;
+}
+
+
+

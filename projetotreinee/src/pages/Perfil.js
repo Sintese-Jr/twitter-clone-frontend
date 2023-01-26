@@ -5,11 +5,17 @@ import CardPerfil from "../components/CardPerfil/CardPerfil"
 import Menulateral from "../components/Menulateral/Menulateral";
 import Tweet from "../components/Tweet/Tweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
+import users from "../mockData/users.json";
+import tweetsDB from "../mockData/tweetsDB.json";
 
 export default function PerfilPage() {
     return (
         <body>
-            <Header tipo="perfil"/>
+            <Header 
+                tipo="perfil"
+                nome={users["root"].nome} 
+                fotoPerfil={users["root"].fotoPerfil}
+            />
             <CardPerfil />
             <div className="corpo-principal">
                 <Menulateral 
