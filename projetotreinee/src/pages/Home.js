@@ -27,6 +27,7 @@ export default function HomePage() {
     return (
         <body>
             <Header 
+                tipo="home"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />

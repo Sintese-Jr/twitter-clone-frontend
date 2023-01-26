@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom/client';
 import LogoTelaGrande from './images/tweeter.svg'
 import LogoTelaPequena from './images/tweeter-small.svg'
 import FotoPerfil from './images/perfil.jpg'
@@ -11,7 +12,9 @@ import {Link, NavLink} from "react-router-dom"
 
 function Header(props) {
 
+
     const fotoPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
+
 
     function abrir() {
         const menuPerfil = document.getElementById("menuPerfil");
@@ -61,6 +64,27 @@ function Header(props) {
         fotoPrimaria.classList.add('aparecerFoto');
     }
     
+    const tipoPagina = props.tipo;
+
+    function paginaAtual() {
+        const linkHome = document.getElementById("linkHome");
+        const linkExplore = document.getElementById("linkExplore");
+        const linkBookmarks = document.getElementById("linkBook");
+    
+        if (tipoPagina === "home") {
+            linkHome.classList.add('selecionado');
+
+        } else if (tipoPagina === "explore") {
+            linkExplore.classList.add('selecionado');
+
+        } else if (tipoPagina === "bookmarks") {
+            linkBookmarks.classList.add('selecionado');
+
+        } else {
+
+        }    
+    }
+    
     return(
         <header>
             <div className='conteudo'>
@@ -68,13 +92,13 @@ function Header(props) {
                 <img src={LogoTelaPequena} alt="Logotipo Tweeter" className="logoPequena"></img>
                 <table className='paginas'>
                     <tr>
-                        <td className='tdespaco home'><NavLink to="/">Home</NavLink></td>
-                        <td className='tdespaco explore'><NavLink to="/explore">Explore</NavLink></td>
-                        <td className='tdespaco bookmarks' id='book'><NavLink to="/bookmarks">Bookmarks</NavLink></td>
+                        <td className='tdespaco' id='linkHome'><NavLink to="/">Home</NavLink></td>
+                        <td className='tdespaco' id='linkExplore'><NavLink to="/explore">Explore</NavLink></td>
+                        <td className='tdespaco' id='linkBook'><NavLink to="/bookmarks">Bookmarks</NavLink></td>
                     </tr>
                 </table>
 
-                <table className='perfil'>
+                <table className='perfil' onLoad={paginaAtual}>
                     <tr>
                         <td className='tdespacoPerfil'><img src={fotoPerfil} alt="Foto Perfil" id="fotoPerfilPrimaria" className='aparecerFoto' onClick={abrirPerfilMobile}></img></td>
                         <td className='tdespacoPerfil'><img src={fotoPerfil} alt="Foto Perfil" id="fotoPerfilSecundaria" className='desaparerFoto' onClick={fecharPerfilMobile}></img></td>
@@ -88,7 +112,9 @@ function Header(props) {
                 <MenuPerfil></MenuPerfil>
             </div>
         </header>
-    )
+    );
 }
+
+
 
 export default Header;

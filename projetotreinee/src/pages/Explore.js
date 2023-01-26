@@ -13,6 +13,7 @@ export default function explore (props) {
     return (
         <body>
             <Header 
+                tipo="explore"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />

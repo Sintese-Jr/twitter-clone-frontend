@@ -10,9 +10,11 @@ export default function BookmarksPage() {
     return (
         <body>
             <Header 
+                tipo="bookmarks"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />
+
                 <div className="pagina-principal">
                     <Menulateral 
                         primeiro="Tweets"

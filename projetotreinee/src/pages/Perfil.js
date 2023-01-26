@@ -12,6 +12,7 @@ export default function PerfilPage() {
     return (
         <body>
             <Header 
+                tipo="perfil"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />

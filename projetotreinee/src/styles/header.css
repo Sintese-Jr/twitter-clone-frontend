@@ -31,17 +31,27 @@
         color: #828282;
         letter-spacing: -0.035em;
         font-style: normal;
-        /* width: 30%; */
-        line-height: 21px; 
+        line-height: 21px;
+        height: inherit;
+    }
+
+    .selecionado {
+        color: #2F80ED;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 0.5vh solid #2F80ED;
+        border-radius: 0px 0px 3px 3px;
     }
     
     .tdespaco { 
-        display: table; 
+        display: flex; 
         float:left; 
         margin-right: 5vw;
+        height: 100%;
+        align-items: center;
     }
     
-    #book {
+    #linkBook {
         margin-right: 0vw;
     }
     
@@ -100,6 +110,7 @@
     .desaparerFoto{
         display: none;
     }
+
 }
 
 @media screen and (max-width: 480px) {
