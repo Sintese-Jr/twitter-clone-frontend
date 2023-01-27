@@ -8,7 +8,7 @@ export default function Tweet(props) {
 
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
-    
+    const imagemPerfilRoot = require(`../../images/fotoPerfil/${props.fotoUsuarioLogado}`);
     
     const [curtiu, setCurtiu] = useState(false);
     const [retweetou, setRetweet] = useState(false);
@@ -70,7 +70,7 @@ export default function Tweet(props) {
                 </div>
                 <div className="comment">
                     <div className="imageComment">
-                        <img src={imagemPerfil}/>
+                        <img src={imagemPerfilRoot}/>
                     </div>
                     <div className="conteudoComment">
                         <form action="...">

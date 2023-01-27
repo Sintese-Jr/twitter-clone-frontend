@@ -1,9 +1,10 @@
 import '../../styles/sugestaoSeguir.css'
 import BotaoAzulPequeno from "../utilities/BotaoAzulPequeno.js";
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 
-export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFundo}) {
+export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFundo, id}) {
     const [seguindo, setSeguindo] = useState(false);
     
     function handleClick()
@@ -16,11 +17,16 @@ export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFu
         <div className="SugestaoSeguir">
             <hr />
             <div className="NomeSeguidoresFollow">
-                <img src={fotoPerfil} alt="Imagem de perfil" className="FotoPerfil"></img>
-                <div className="NomeSeguidores">
-                    <div className="Nome">{nome}</div>
-                    <div className="Seguidores">{seguidores} seguidores</div>
-                </div>
+               
+                    <img src={fotoPerfil} alt="Imagem de perfil" className="FotoPerfil"></img>
+                    
+                     <div className="NomeSeguidores">
+                        <Link to={`../perfil/${id}`}>
+                            <div className="Nome">{nome}</div>
+                        </Link>
+                        <div className="Seguidores">{seguidores} seguidores</div>
+                     </div>
+                    
                 <div className='Botao' onClick={handleClick} >
                     {seguindo === false && <BotaoAzulPequeno  icone='fa-solid fa-user-plus' texto='Seguir' />}
                     {seguindo === true && <BotaoAzulPequeno  texto='Seguindo' />}

@@ -1,8 +1,10 @@
 import React from "react";
 import "../../styles/Tweetar.css"
-import Perfil from "./images/perfil.jpg"
 
-export default function Tweetar() {
+export default function Tweetar(props) {
+
+    const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
+
     return (
         <div className= "tweetar">
             <div class="feeds-content">
@@ -14,7 +16,7 @@ export default function Tweetar() {
             </div>
             <div className="header-post">
                 <div class="header-img-wrapper">
-                    <img src={Perfil}/> 
+                    <img src={imagemPerfil}/> 
                     <input type="text" placeholder="What's happening?"/>
                 </div>
             </div>
