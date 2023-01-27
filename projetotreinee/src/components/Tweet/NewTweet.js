@@ -68,6 +68,7 @@ export default function Tweet(props) {
                     </div>
 
                 </div>
+                
                 <div className="comment">
                     <div className="imageComment">
                         <img src={imagemPerfilRoot}/>
