@@ -1,58 +1,245 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.search {
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    margin: auto;
+@media (min-width: 1025px) {
+    .search {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        margin: auto;
+    }
+    
+    .texto {
+        color: black;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 90%;
+        margin: auto;
+        margin-left: 3%;
+        border: none;
+        width: 75%;
+    }
+    
+    ::-webkit-input-placeholder  { 
+        color: #BDBDBD;
+    }
+    
+    .lupa {
+        height: 35%;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    
+    .botao {
+        background: #2F80ED;
+        border-radius: 4px;
+        font-size: 80%;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+        margin: auto;
+        margin-right: 1.5%;
+        margin-left: 0%;
+        width: 13%;
+        height: 4.5vh;
+        border-style: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
+    
+    textarea:focus, input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 }
 
-.texto {
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 90%;
-    margin: auto;
-    margin-left: 3%;
-    border: none;
-    width: 75%;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .search {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        margin: auto;
+    }
+    
+    .texto {
+        color: black;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 90%;
+        margin: auto;
+        margin-left: 3%;
+        border: none;
+        width: 75%;
+    }
+    
+    ::-webkit-input-placeholder  { 
+        color: #BDBDBD;
+    }
+    
+    .lupa {
+        height: 35%;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    
+    .botao {
+        background: #2F80ED;
+        border-radius: 4px;
+        font-size: 80%;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+        margin: auto;
+        margin-right: 1.5%;
+        margin-left: 0%;
+        width: 13%;
+        height: 4.5vh;
+        border-style: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
+    
+    textarea:focus, input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 }
 
-::-webkit-input-placeholder  { 
-    color: #BDBDBD;
+@media (min-width: 481px) and (max-width: 768px) {
+    .search {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        margin: auto;
+    }
+    
+    .texto {
+        color: black;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 90%;
+        margin: auto;
+        margin-left: 3%;
+        border: none;
+        width: 75%;
+    }
+    
+    ::-webkit-input-placeholder  { 
+        color: #BDBDBD;
+    }
+    
+    .lupa {
+        height: 35%;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    
+    .botao {
+        background: #2F80ED;
+        border-radius: 4px;
+        font-size: 80%;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+        margin: auto;
+        margin-right: 1.5%;
+        margin-left: 0%;
+        width: 20%;
+        height: 4vh;
+        border-style: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
+    
+    textarea:focus, input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 }
 
-.lupa {
-    height: 35%;
-    margin: auto;
-    margin-left: 2%;
-    margin-right: 0%;
-}
-
-.botao {
-    background: #2F80ED;
-    border-radius: 4px;
-    font-size: 80%;
-    color: #fff;
-    font-family: 'Noto Sans', sans-serif;
-    margin: auto;
-    margin-right: 1.5%;
-    margin-left: 0%;
-    width: 13%;
-    height: 4.5vh;
-    border-style: none;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none;
-}
-
-textarea:focus, input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
+@media (max-width: 480px) {
+    .search {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        margin: auto;
+    }
+    
+    .texto {
+        color: black;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 90%;
+        margin: auto;
+        margin-left: 3%;
+        border: none;
+        width: 75%;
+    }
+    
+    ::-webkit-input-placeholder  { 
+        color: #BDBDBD;
+    }
+    
+    .lupa {
+        height: 35%;
+        margin: auto;
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    
+    .botao {
+        background: #2F80ED;
+        border-radius: 4px;
+        font-size: 80%;
+        color: #fff;
+        font-family: 'Noto Sans', sans-serif;
+        margin: auto;
+        margin-right: 1.5%;
+        margin-left: 0%;
+        width: 20%;
+        height: 4vh;
+        border-style: none;
+        text-align: center;
+        padding-right: 0px;
+    }
+    
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
+    
+    textarea:focus, input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 }
