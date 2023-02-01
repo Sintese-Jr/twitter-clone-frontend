@@ -10,11 +10,12 @@
 
 @media (min-width: 1025px) {
     .botao-azul {
-        width: fit-content;
-        height: 32px;
+        width: 7.9vw;
+        height: 20px;
         background-color: var(--corbotaoazul);
         padding-left: 22px;
         padding-right: 22px;
+        padding-bottom: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,10 +47,47 @@
         letter-spacing: var(--letterSpacingPadrao);
       }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
     .botao-azul {
-        width: fit-content;
+        width: 7.9vw;
+        height: 12%;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 1.1vh;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 100%;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 70%;
+        line-height: 1.0212em;
+        width: 7vw;
+        height: 4vw;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
+}
+@media (min-width: 700px) and (max-width: 768px) {
+    .botao-azul {
+        width: 12vw;
         height: 12%;
         background-color: var(--corbotaoazul);
         padding-left: 22px;
@@ -86,9 +124,9 @@
       }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 699px) {
     .botao-azul {
-        width: fit-content;
+        width: 19vw;
         height: 12%;
         background-color: var(--corbotaoazul);
         padding-left: 22px;

@@ -11,7 +11,7 @@ import PerfilPage from './pages/Perfil';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <BrowserRouter>
-       <PerfilPage/>
+       <App/>
    </BrowserRouter>
 );
 

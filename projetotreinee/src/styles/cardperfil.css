@@ -133,15 +133,18 @@
     
     .botao{
         padding-right: 1.5em;
+        padding-top: 2vh;
+        
     }
     }
-    @media screen and (max-width:698.9px){
+
+    @media screen and (min-width:570px) and (max-width:699px){
         .cardperfil {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
-            margin-bottom: 18vh;
+            margin-bottom: 4vh;
         }
         
         .imagemcapa {
@@ -256,25 +259,170 @@
         }
         
         .description {
-            margin-left: 12.5vw;
-            margin-right: 6.5vw;
-            width: 25.6vw;
+            
+            width: 27.6vw;
             position: absolute;
             padding-top: 5px;
             top: 50.3vh;
-            
+            margin-left: 18vw;
+            margin-right: 7vw;
         }
         
         .description > p {
             color: #828282;
             font-size: 18px;
-            width: 53vw
-            
+            width: 50vw
         }
         
         .botao{
-            padding-right: 1.5em;
-            margin-top: 21vh;
-            margin-right: 12vw;
+            padding-top: 13px;
+            position: absolute;
+            top: 60vh;
+            margin-top: 23vh;
+            right: 38vw;
+        }
+    }
+    @media screen and (max-width:569px){
+        .cardperfil {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-bottom: 4vh;
+        }
+        
+        .imagemcapa {
+            width: 100vw;
+            height: 294px;
+        }
+        
+        .imagemcapa > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .infobar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 14vw;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 500px;
+        }
+        
+        .infobar > .botao-azul {
+            margin-right: 1.5vw;
+        }
+        
+        .userdisplay {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            width: 74.5vw;
+            height: 226px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
+            margin-top: -3vh;
+        }
+        
+        .imagemperfil {
+            position: absolute;
+            right: 42%;
+            left: 40vw;
+            top: 40%;
+            background-color: gray;
+            border-radius: 8px;
+            width: 17vw;
+            height: 10.5vw;
+        }
+        
+        .imagemperfil > img {
+            height: 116px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            border: solid white 3px;
+        }
+        
+        .pessoalinfo {
+            position: absolute;
+            top:42vh;
+            right: 7vw;
+            left: 7vw;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            align-items: center;
+            margin: 0;
+        }
+    
+        .followers{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5.5vw;
+            margin-right: 1vw;
+        }
+        
+        .pessoalinfo > p {
+            margin-right: 2vw;
+        }
+    
+        .followers > p {
+            margin-right: 5vh;
+        }
+        
+        .nomeuser {
+            font-family: var(--fontepoppins);
+            font-weight: 600;
+            font-size: 24px;
+        }
+        
+        .followinguser {
+            font-family: var(--fontepoppins);
+            font-size: 12px;
+            color: #828282;
+        }
+        
+        .followinguser > span {
+            font-weight: 600;
+            color: black;
+        }
+        
+        .followersuser {
+            font-family: var(--fontepoppins);
+            font-size: 12px;
+            color: #828282;
+        }
+        
+        .followersuser > span {
+            font-weight: 600;
+            color: black;
+        }
+        
+        .description {
+            
+            width: 27.6vw;
+            position: absolute;
+            padding-top: 5px;
+            top: 50.3vh;
+            margin-left: 14vw;
+            margin-right: 7vw;
+        }
+        
+        .description > p {
+            color: #828282;
+            font-size: 18px;
+            width: 50vw
+        }
+        
+        .botao{
+            padding-top: 13px;
+            position: absolute;
+            top: 60vh;
+            margin-top: 23vh;
+            right: 37vw;
         }
     }
