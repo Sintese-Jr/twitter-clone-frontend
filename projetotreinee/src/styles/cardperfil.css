@@ -135,7 +135,7 @@
     padding-right: 1.5em;
 }
 }
-@media screen and (max-width:480px){
+@media (max-width: 480px){
     .cardperfil {
         display: flex;
         flex-direction: column;

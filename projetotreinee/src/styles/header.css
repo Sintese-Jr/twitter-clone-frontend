@@ -372,3 +372,8 @@
         display: none;
     }
 }
+
+.active {
+    color:#2F80ED;
+    font-weight: 600;
+}
