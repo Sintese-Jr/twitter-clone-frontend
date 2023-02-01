@@ -16,7 +16,8 @@ export default function HomePage() {
         const usuario = users[tweetsDB[tweetId].writerId];
         const dados = {...tweetsDB[tweetId], 
             "nome": usuario.nome,
-            "fotoPerfil": usuario.fotoPerfil
+            "fotoPerfil": usuario.fotoPerfil,
+            "fotoUsuarioLogado": users["root"].fotoPerfil,
         }
         return <Tweet 
             key={tweetId}
@@ -33,7 +34,8 @@ export default function HomePage() {
             />
             <div className="corpo-principal-home">
                 <div className="tweet-tamanho-home">
-                    <Tweetar />
+                    <Tweetar 
+                    fotoPerfil={users["root"].fotoPerfil}/>
                     <RetweetTag nome="Daniela Jensen" />
                     {listaTweets}
                 </div>
@@ -41,7 +43,9 @@ export default function HomePage() {
                     <Trends 
                     trends={users["root"].trends}/>
                     <div className="quem-seguir">
-                        <QuemSeguir />
+                        <QuemSeguir 
+                            sugests = {[...users["root"].followSugestions]}
+                        />
                     </div>
                 </div>
             </div>

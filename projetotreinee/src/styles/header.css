@@ -196,9 +196,15 @@
         display: none;
     }
 
+
     .desaparerFoto{
         display: none;
     }
+    
+    #seta {
+        cursor: pointer;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
