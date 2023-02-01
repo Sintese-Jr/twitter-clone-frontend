@@ -5,7 +5,7 @@ import perfil from "../images/cardPerfil/fotoPerfil.jpg"
 export default function ImagemPerfil(props) {
     return (
         <div className="imagemperfil">
-            <img src={perfil}></img>
+            <img src={props.srcImagemPerfil}></img>
         </div>
     )
 }
