@@ -1,3 +1,4 @@
+@media (min-width: 1025px) {
     .principalExplore {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -7,7 +8,56 @@
         margin: auto;
         margin-top: 6vh;
     }
-
+    
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
         margin-bottom: 3vh;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .principalExplore {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: fit-content;
+        height: fit-content;
+        gap: 0 1.2rem;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    
+    .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
+        margin-bottom: 3vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .principalExplore {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: fit-content;
+        height: fit-content;
+        gap: 0 1.2rem;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    
+    .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
+        margin-bottom: 3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .principalExplore {
+        /* display: grid;
+        grid-template-columns: 1fr 2fr; */
+        width: 90vw;
+        height: fit-content;
+        /* gap: 0 1.2rem; */
+        margin: auto;
+        margin-top: 6vh;
+    }
+    
+    .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
+        margin-bottom: 2vh;
+    }
+}

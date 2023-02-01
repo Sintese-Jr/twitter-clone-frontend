@@ -8,40 +8,194 @@
     --corbotaoazul: #2F80ED;
 }
 
-
-.botao-azul {
-    width: fit-content;
-    height: 32px;
-    background-color: var(--corbotaoazul);
-    padding-left: 22px;
-    padding-right: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
+@media (min-width: 1025px) {
+    .botao-azul {
+        width: fit-content;
+        height: 32px;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 0.75em;
+        line-height: 1.0212em;
+        width: 5.9375em;
+        height: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
 }
 
-.fa-user-plus {
-    color: white;
-    font-size: 12px;
-    margin-right: 3px;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .botao-azul {
+        width: fit-content;
+        height: 12%;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 1.1vh;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 100%;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 70%;
+        line-height: 1.0212em;
+        width: 7vw;
+        height: 4vw;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
 }
 
-.texto-botao-azul {
-    color: white;
-    font-size: 12px;
-    font-weight: 500;
-    font-family: var(--fontebotao);
+@media (min-width: 481px) and (max-width: 768px) {
+    .botao-azul {
+        width: fit-content;
+        height: 12%;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 1.1vh;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 50%;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 70%;
+        line-height: 1.0212em;
+        width: 7vw;
+        height: 3vh;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
 }
 
-.pequeno {
-    font-size: 0.75em;
-    line-height: 1.0212em;
-    width: 5.9375em;
-    height: 2em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    letter-spacing: var(--letterSpacingPadrao);
-  }
+@media (max-width: 480px) {
+    .botao-azul {
+        width: fit-content;
+        height: 12%;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 5%;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 50%;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 90%;
+        line-height: 1.0212em;
+        width: 8vw;
+        height: 3vh;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
+    .botao-azul {
+        width: fit-content;
+        height: 32px;
+        background-color: var(--corbotaoazul);
+        padding-left: 22px;
+        padding-right: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .fa-user-plus {
+        color: white;
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    
+    .texto-botao-azul {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--fontebotao);
+    }
+    
+    .pequeno {
+        font-size: 0.75em;
+        line-height: 1.0212em;
+        width: 5.9375em;
+        height: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        letter-spacing: var(--letterSpacingPadrao);
+      }
+}

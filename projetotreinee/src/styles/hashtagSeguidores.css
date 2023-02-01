@@ -8,30 +8,102 @@
   --letterSpacingPadrao: -0.035em;
 }
 
-
-.HashSegui {
-  font-family: Noto Sans;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: -0.035em;
-  text-align: left;
-  margin-bottom: 1.8em;
-  cursor: pointer;
+@media (min-width: 1025px) {
+  .HashSegui {
+    font-family: Noto Sans;
+    font-size: 95%;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    margin-bottom: 1.8em;
+    cursor: pointer;
+  }
+  
+  
+  .Hashtag {
+    font-family: var(--fontePoppins);
+    color:  #333333;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color: #828282;
+  }
 }
 
-
-.Hashtag {
-  font-family: var(--fontePoppins);
-  color:  #333333;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .HashSegui {
+    font-family: Noto Sans;
+    font-size: 95%;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    margin-bottom: 1.8em;
+    cursor: pointer;
+  }
+  
+  
+  .Hashtag {
+    font-family: var(--fontePoppins);
+    color:  #333333;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color: #828282;
+  }
 }
 
-.Seguidores {
-  font-family: var(--fonteNotoSans);
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: -0.035em;
-  text-align: left;
-  color: #828282;
+@media (min-width: 481px) and (max-width: 768px) {
+  .HashSegui {
+    font-family: Noto Sans;
+    font-size: 80%;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    margin-bottom: 1.8em;
+    cursor: pointer;
+  }
+  
+  .Hashtag {
+    font-family: var(--fontePoppins);
+    color:  #333333;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color: #828282;
+  }
+}
+
+@media (max-width: 480px) {
+  .HashSegui {
+    display: none;
+  }
+  
+  .Hashtag {
+    display: none;
+  }
+  
+  .Seguidores {
+    display: none;
+  }
 }

@@ -1,58 +1,242 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.container-menu {
-    width: 304px;
-    height: 219.01px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+@media (min-width: 1025px) {
+    .container-menu {
+        width: 19.7vw;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding-bottom: 3vh;
+    }
+    
+    .tweets {
+        width: fit-content;
+        background: #ffffff;
+        height: fit-content;
+        margin-left: 2vw;
+        margin-top: 25.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        /* font-size: 14px; */
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #2F80ED;
+    }
+    
+    .tweets2{
+        background: #FFFFFF;
+        width: 125px;
+        height: 21px;
+        margin-left: 2.2vw;
+        margin-top: 26.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #828282;
+    }
+    
+    .canto {
+        background: #FFFFFF;
+        width: 3px;
+        height: 32px;
+        margin-top: 20px;
+        margin-left: 0;
+        background: #2F80ED;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .container2 {
+        background: #FFFFFF;
+        display: flex;
+        margin: 0px;
+        height: 47px;
+        border-radius: 8px;
+    }    
 }
 
-.tweets {
-    width: 48px;
-    background: #FFFFFF;
-    height: 21px;
-    margin-left: 19px;
-    margin-top: 25.05px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.035em;
-    color: #2F80ED;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container-menu {
+        width: 19.7vw;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding-bottom: 2vh;
+    }
+    
+    .tweets {
+        width: fit-content;
+        background: #ffffff;
+        height: fit-content;
+        margin-left: 2vw;
+        margin-top: 25.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        /* font-size: 14px; */
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #2F80ED;
+    }
+    
+    .tweets2{
+        background: #FFFFFF;
+        width: 125px;
+        height: 21px;
+        margin-left: 2.2vw;
+        margin-top: 26.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #828282;
+    }
+    
+    .canto {
+        background: #FFFFFF;
+        width: 3px;
+        height: 32px;
+        margin-top: 20px;
+        margin-left: 0;
+        background: #2F80ED;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .container2 {
+        background: #FFFFFF;
+        display: flex;
+        margin: 0px;
+        height: 47px;
+        border-radius: 8px;
+    }   
 }
 
-.tweets2{
-    background: #FFFFFF;
-    width: 125px;
-    height: 21px;
-    margin-left: 22.5px;
-    margin-top: 26.05px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.035em;
-    color: #828282;
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-menu {
+        width: 19.7vw;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding-bottom: 2vh;
+        min-height: 25vh;
+    }
+    
+    .tweets {
+        width: fit-content;
+        background: #ffffff;
+        height: fit-content;
+        margin-left: 2vw;
+        margin-top: 25.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        /* font-size: 14px; */
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #2F80ED;
+    }
+    
+    .tweets2{
+        background: #FFFFFF;
+        width: 125px;
+        height: 21px;
+        margin-left: 2.2vw;
+        margin-top: 26.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #828282;
+    }
+    
+    .canto {
+        background: #FFFFFF;
+        width: 3px;
+        height: 32px;
+        margin-top: 20px;
+        margin-left: 0;
+        background: #2F80ED;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .container2 {
+        background: #FFFFFF;
+        display: flex;
+        margin: 0px;
+        height: 47px;
+        border-radius: 8px;
+    }   
 }
 
-.canto {
-    background: #FFFFFF;
-    width: 3px;
-    height: 32px;
-    margin-top: 20px;
-    margin-left: 0;
-    background: #2F80ED;
-    border-radius: 0px 4px 4px 0px;
+@media (max-width: 480px) {
+    .container-menu {
+        width: 100%;
+        height: fit-content;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        padding-bottom: 3vh;
+    }
+    
+    .tweets {
+        width: fit-content;
+        background: #ffffff;
+        height: fit-content;
+        margin-left: 2vw;
+        margin-top: 25.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        /* font-size: 14px; */
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #2F80ED;
+    }
+    
+    .tweets2{
+        background: #FFFFFF;
+        width: 125px;
+        height: 21px;
+        margin-left: 2.2vw;
+        margin-top: 26.05px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 95%;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+        color: #828282;
+    }
+    
+    .canto {
+        background: #FFFFFF;
+        width: 3px;
+        height: 32px;
+        margin-top: 20px;
+        margin-left: 0;
+        background: #2F80ED;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    .container2 {
+        background: #FFFFFF;
+        display: flex;
+        margin: 0px;
+        height: 47px;
+        border-radius: 8px;
+    }   
 }
-
-.container2 {
-    background: #FFFFFF;
-    display: flex;
-    margin: 0px;
-    height: 47px;
-    border-radius: 8px;
-}
-

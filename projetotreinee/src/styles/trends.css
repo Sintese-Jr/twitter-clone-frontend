@@ -5,34 +5,102 @@
   --letterSpacingPadrao: -0.035em;
 }
 
-
-hr{
-  background-color:#E0E0E0;
-  margin-bottom: 1.25em;
-}
-
-.trends{
-  font-family: var(--fontePoppins);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-  letter-spacing: -0.035em;
-  text-align: left;
-  color:  #4F4F4F;
-  margin: 0;
-    
-}
-
-.container{
-  text-align: left;
-  width: 306px;
-  height: fit-content;
-  padding: 10px 20px;
-  border-radius: 4%;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-  background-color:  #FFFFFF;
+@media (min-width: 1025px) {
+  hr{
+    background-color:#E0E0E0;
+    margin-bottom: 1.25em;
+  }
   
+  .trends{
+    font-family: var(--fontePoppins);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color:  #4F4F4F;
+    margin: 0;
+      
+  }
+  
+  .container{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 4%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    background-color:  #FFFFFF;
+    
+  }  
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  hr{
+    background-color:#E0E0E0;
+    margin-bottom: 1.25em;
+  }
+  
+  .trends{
+    font-family: var(--fontePoppins);
+    font-size: 70%;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color:  #4F4F4F;
+    margin: 0;
+  }
+  
+  .container{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 4%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    background-color:  #FFFFFF;
+  }  
+}
 
+@media (min-width: 481px) and (max-width: 768px) {
+  hr{
+    background-color:#E0E0E0;
+    margin-bottom: 1.25em;
+  }
+  
+  .trends{
+    font-family: var(--fontePoppins);
+    font-size: 70%;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    color:  #4F4F4F;
+    margin: 0;
+  }
+  
+  .container{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 4%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    background-color:  #FFFFFF;
+  }  
+}
 
+@media (max-width: 480px) {
+  hr{
+    display: none;
+  }
+  
+  .trends{
+    display: none;
+  }
+  
+  .container{
+    display: none;
+  }  
+}
