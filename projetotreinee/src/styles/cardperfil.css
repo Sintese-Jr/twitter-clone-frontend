@@ -10,132 +10,8 @@
     --fontenotosans: 'Noto Sans', sans-serif;
     --fontepoppins: 'Poppins', sans-serif;
 }
-@media screen and (min-width:481px){
-.cardperfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    margin-bottom: 18vh;
-}
 
-.followers{
-    display: flex;
-    margin-left: 30px;
-    margin-top: 0.3vh;
-}
-.followers > p{
-    margin-right: 30px;
-}
-
-.imagemcapa {
-    width: 100vw;
-    height: 294px;
-}
-
-.imagemcapa > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.infobar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 14vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.infobar > .botao-azul {
-    margin-right: 1.5vw;
-}
-
-.userdisplay {
-    background-color: white;
-    border-radius: 10px;
-    width: 74.5vw;
-    height: 163px;
-    position: absolute;
-    top: 82%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
-}
-
-.imagemperfil {
-    position: absolute;
-    margin-left: 2vw;
-    top: -30%;
-    background-color: gray;
-    border-radius: 8px;
-    width: 10.5vw;
-    height: 10.5vw;
-}
-
-.imagemperfil > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.pessoalinfo {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-.pessoalinfo > p {
-    margin-right: 2vw;
-}
-
-.nomeuser {
-    font-family: var(--fontepoppins);
-    font-weight: 600;
-    font-size: 24px;
-}
-
-.followinguser {
-    font-family: var(--fontepoppins);
-    font-size: 12px;
-    color: #828282;
-}
-
-.followinguser > span {
-    font-weight: 600;
-    color: black;
-}
-
-.followersuser {
-    font-family: var(--fontepoppins);
-    font-size: 12px;
-    color: #828282;
-}
-
-.followersuser > span {
-    font-weight: 600;
-    color: black;
-}
-
-.description {
-    margin-left: 14vw;
-    width: 29.6vw;
-    position: absolute;
-    padding-top: 5px;
-    
-}
-
-.description > p {
-    color: #828282;
-    font-size: 18px;
-    margin-top: -7px;
-}
-
-.botao{
-    padding-right: 1.5em;
-}
-}
-@media screen and (max-width:480px){
+@media screen and (min-width:481px) {
     .cardperfil {
         display: flex;
         flex-direction: column;
@@ -143,18 +19,149 @@
         position: relative;
         margin-bottom: 18vh;
     }
-    
+
+    .followers {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 0.3vh;
+    }
+
+    .followers>p {
+        margin-right: 30px;
+    }
+
     .imagemcapa {
         width: 100vw;
         height: 294px;
     }
-    
-    .imagemcapa > img {
+
+    .imagemcapa>img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    
+
+    .infobar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 14vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .infobar>.botao-azul {
+        margin-right: 1.5vw;
+    }
+
+    .userdisplay {
+        background-color: white;
+        border-radius: 10px;
+        width: 74.5vw;
+        height: 163px;
+        position: absolute;
+        top: 82%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
+    }
+
+    .imagemperfil {
+        position: absolute;
+        margin-left: 2vw;
+        top: -30%;
+        background-color: gray;
+        border-radius: 8px;
+        width: 10.5vw;
+        height: 10.5vw;
+    }
+
+    .imagemperfil>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .pessoalinfo {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .pessoalinfo>p {
+        margin-right: 2vw;
+    }
+
+    .nomeuser {
+        font-family: var(--fontepoppins);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .followinguser {
+        font-family: var(--fontepoppins);
+        font-size: 12px;
+        color: #828282;
+        cursor: pointer;
+    }
+
+    .followinguser:hover{
+        text-decoration: underline;
+    }
+
+    .followinguser>span {
+        font-weight: 600;
+        color: black;
+    }
+
+    .followersuser {
+        font-family: var(--fontepoppins);
+        font-size: 12px;
+        color: #828282;
+    }
+
+    .followersuser>span {
+        font-weight: 600;
+        color: black;
+    }
+
+    .description {
+        margin-left: 14vw;
+        width: 29.6vw;
+        padding-top: 5px;
+
+    }
+
+    .description>p {
+        color: #828282;
+        font-size: 18px;
+        margin-top: -7px;
+    }
+
+    .botao {
+        padding-right: 1.5em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cardperfil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 18vh;
+    }
+
+    .imagemcapa {
+        width: 100vw;
+        height: 294px;
+    }
+
+    .imagemcapa>img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
     .infobar {
         display: flex;
         flex-direction: column;
@@ -165,11 +172,11 @@
         padding-bottom: 20px;
         height: 500px;
     }
-    
-    .infobar > .botao-azul {
+
+    .infobar>.botao-azul {
         margin-right: 1.5vw;
     }
-    
+
     .userdisplay {
         display: flex;
         flex-direction: column;
@@ -180,7 +187,7 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
         margin-top: -3vh;
     }
-    
+
     .imagemperfil {
         position: absolute;
         margin-left: 25vw;
@@ -190,18 +197,18 @@
         width: 23.5vw;
         height: 10.5vw;
     }
-    
-    .imagemperfil > img {
+
+    .imagemperfil>img {
         height: 116px;
         width: 116px;
         object-fit: cover;
         border-radius: 8px;
         border: solid white 3px;
     }
-    
+
     .pessoalinfo {
         position: absolute;
-        top:42vh;
+        top: 42vh;
         right: 7vw;
         left: 7vw;
         display: flex;
@@ -211,67 +218,67 @@
         margin: 0;
     }
 
-    .followers{
+    .followers {
         display: flex;
         justify-content: space-between;
         margin-left: 5vh;
     }
-    
-    .pessoalinfo > p {
+
+    .pessoalinfo>p {
         margin-right: 2vw;
     }
 
-    .followers > p {
+    .followers>p {
         margin-right: 5vh;
     }
-    
+
     .nomeuser {
         font-family: var(--fontepoppins);
         font-weight: 600;
         font-size: 24px;
     }
-    
+
     .followinguser {
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
     }
-    
-    .followinguser > span {
+
+    .followinguser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .followersuser {
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
     }
-    
-    .followersuser > span {
+
+    .followersuser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .description {
         margin-left: 5vw;
         width: 29.6vw;
         position: absolute;
         padding-top: 5px;
-        
+
     }
-    
-    .description > p {
+
+    .description>p {
         color: #828282;
         font-size: 18px;
         margin-top: 14vh;
         width: 65vw;
     }
-    
-    .botao{
+
+    .botao {
         padding-right: 1.5em;
         position: absolute;
-        top:90%;
+        top: 90%;
         right: 32vw;
         left: 32vw;
         margin-left: 4vw;

@@ -9,6 +9,7 @@ import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
 
 export default function PerfilPage() {
+ 
     return (
         <body>
             <Header 

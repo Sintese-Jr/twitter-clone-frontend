@@ -1,10 +1,12 @@
 import '../../styles/WhoCanReply.css';
 import Caixas from './Caixas';
-import React from 'react';
+import React, { useState } from 'react';
 
 
 
-function App() {
+function WhoCanReply() {
+
+  
   return (
     <div className="App">
       <div className='container'>
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default WhoCanReply;
