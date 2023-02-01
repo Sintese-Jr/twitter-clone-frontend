@@ -18,11 +18,11 @@
     .principalExplore {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: 74.5vw;
+        width: fit-content;
         height: fit-content;
         gap: 0 1.2rem;
         margin: auto;
-        margin-top: 6vh;
+        margin-top: 2vh;
     }
     
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
@@ -34,11 +34,11 @@
     .principalExplore {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        width: 74.5vw;
+        width: fit-content;
         height: fit-content;
         gap: 0 1.2rem;
         margin: auto;
-        margin-top: 6vh;
+        margin-top: 2vh;
     }
     
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
@@ -58,6 +58,6 @@
     }
     
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
-        margin-bottom: 3vh;
+        margin-bottom: 2vh;
     }
 }
