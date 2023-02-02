@@ -7,6 +7,7 @@ import Tweet from "../components/Tweet/Tweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
 import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
+import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function PerfilPage() {
     return (
@@ -30,6 +31,9 @@ export default function PerfilPage() {
                     <Tweet />
                     <Tweet />
                 </div>
+                <MenuMobile
+                    tipo="perfil"
+                />
             </div>
         </body>
     )
