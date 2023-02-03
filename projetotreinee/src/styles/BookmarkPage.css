@@ -55,6 +55,7 @@
         height: fit-content;
         /* grid-template-columns: 1fr 2fr;
         grid-gap: 0 20px; */
+        padding-bottom: 8vh;
     }
     
     .tweet-tamanho{
