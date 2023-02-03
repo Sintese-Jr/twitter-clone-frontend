@@ -18,7 +18,8 @@ export default function HomePage() {
         const dados = {...tweetsDB[tweetId], 
             "nome": usuario.nome,
             "fotoPerfil": usuario.fotoPerfil,
-            "fotoUsuarioLogado": users["root"].fotoPerfil,
+            "tweetId": tweetId
+
         }
         return <Tweet 
             key={tweetId}

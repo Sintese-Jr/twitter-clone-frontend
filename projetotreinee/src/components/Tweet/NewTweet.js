@@ -1,15 +1,29 @@
 import React, { useState } from "react";
-import "../../styles/Tweet.css"
-import RespostaTweet from "../RespostaTweet/RespostaTweet"
-import {Link} from "react-router-dom"
+import users from "../../mockData/users.json";
+import tweetsDB from "../../mockData/tweetsDB.json";
+import "../../styles/Tweet.css";
+import RespostaTweet from "../RespostaTweet/RespostaTweet";
+import { Link } from "react-router-dom"
 import BotaoTweet from '../utilities/BotaoTweet';
 
 export default function Tweet(props) {
-
+    
+    const arrayResp = tweetsDB[props.tweetId].answers;
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
-    const imagemPerfilRoot = require(`../../images/fotoPerfil/${props.fotoUsuarioLogado}`);
+
+    const listaResp = arrayResp.map(elemento => {
+        const usuarioResp = users[elemento.writerId]
+        return <RespostaTweet
+            image={usuarioResp.fotoPerfil}
+            nome={usuarioResp.nome}
+            data={elemento.datas}
+            qtdLikes={elemento.likes}
+            texto={elemento.aswer} />
+
+    })
     
+
     const [curtiu, setCurtiu] = useState(false);
     const [retweetou, setRetweet] = useState(false);
     const [salvou, setSalvou] = useState(false);
@@ -34,7 +48,7 @@ export default function Tweet(props) {
                 <Link to={`/perfil/${props.writerId}`}>
                     <div className="header-post">
                         <div className="avatar">
-                            <img src={imagemPerfil}/>
+                            <img src={imagemPerfil} />
                         </div>
                         <div className="userPost">
                             <h4>{props.nome}</h4>
@@ -43,9 +57,9 @@ export default function Tweet(props) {
                     </div>
                 </Link>
                 <p className="textoPost">{props.text}</p>
-                <div className = "imagemPost">
-                    {imagemPost ? <img src={imagemPost}/> : 
-                    <br></br>}
+                <div className="imagemPost">
+                    {imagemPost ? <img src={imagemPost} /> :
+                        <br></br>}
                     <span>{props.comments} comments</span>
                     <span>{props.retweets} Retweets</span>
                     <span>{props.saves} saved</span>
@@ -71,16 +85,18 @@ export default function Tweet(props) {
                 
                 <div className="comment">
                     <div className="imageComment">
-                        <img src={imagemPerfilRoot}/>
+
+                        <img src={imagemPerfil} />
+
                     </div>
                     <div className="conteudoComment">
                         <form action="...">
-                             <input type="text" id="comentario" placeholder="Tweet your reply"/>
-                                <i className="fa-regular fa-image"></i>
+                            <input type="text" id="comentario" placeholder="Tweet your reply" />
+                            <i className="fa-regular fa-image"></i>
                         </form>
                     </div>
                 </div>
-                <RespostaTweet />
+               {listaResp}
             </div>
         </div>
     );

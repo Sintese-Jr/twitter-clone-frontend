@@ -6,6 +6,7 @@ import EspacoLikes from './RespostaTweetComponents/EspacoLikes';
 import imgSrc from './images/fotoPerfil.jpg'
 
 export default function RespostaTweet(props) {
+    const imagePerfil = require(`../../images/fotoPerfil/${props.image}`);
     const [curtiu, setCurtiu] = useState(false);
 
     function handleClick() {
@@ -15,17 +16,16 @@ export default function RespostaTweet(props) {
 
     return (
         <div className="respostaTweet">
-            <FotoPerfil imgSrc={imgSrc} />
+            <FotoPerfil imgSrc={imagePerfil}/> 
             <div className="respostaELikes">
                 <EspacoResposta
-                    nome="Bianca Sosa"
-                    data="24 August at 20:43"
-                    texto="I've felt this pull many times, like while road tripping through Morrocco.
-                    Seeking out the vastness of the desert, and looking inward at the same time."
+                    nome={props.nome}
+                    data={props.data}
+                    texto={props.texto}
                 />
                 <div className="botaoLike"  onClick={handleClick}>
-                    {curtiu === false && <EspacoLikes liked="notLiked" qtdLikes="48k" textoLiked="Like" />}
-                    {curtiu === true && <EspacoLikes liked="liked" qtdLikes="48k" textoLiked="Liked" />}
+                    {curtiu === false && <EspacoLikes liked="notLiked" qtdLikes={props.qtdLikes} textoLiked="Like" />}
+                    {curtiu === true && <EspacoLikes liked="liked" qtdLikes={props.qtdLikes} textoLiked="Liked" />}
                 </div>
             </div>
         </div>
