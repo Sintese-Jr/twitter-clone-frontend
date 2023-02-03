@@ -10,6 +10,7 @@ export default function Tweet(props) {
     
     const arrayResp = tweetsDB[props.tweetId].answers;
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
+    const imagemPerfilRoot = require(`../../images/fotoPerfil/${props.fotoPerfilRoot}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
     
     const [showComments, setShow] = useState(true)
@@ -28,7 +29,9 @@ export default function Tweet(props) {
                     nome={usuarioResp.nome}
                     data={elemento.datas}
                     qtdLikes={elemento.likes}
-                    texto={elemento.aswer} />
+                    texto={elemento.aswer}
+                    id={elemento.writerId} />
+                    
             });
             setListaResp(resp);
         } else setListaResp(null);
@@ -94,7 +97,7 @@ export default function Tweet(props) {
                 <div className="comment">
                     <div className="imageComment">
 
-                        <img src={imagemPerfil} />
+                        <img src={imagemPerfilRoot} />
 
                     </div>
                     <div className="conteudoComment">
