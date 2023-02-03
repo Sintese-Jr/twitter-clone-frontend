@@ -8,13 +8,13 @@ export default function UserDisplay(props) {
     
     return (
         <div className="userdisplay">
-            <ImagemPerfil />
+            <ImagemPerfil srcImagemPerfil={props.srcImagemPerfil}/>
             <InfoBar
-                nomeuser="Daniela Jensen"
-                followingnomeuser="1,370"
-                followersuser="10,5k"
+                nomeuser={props.nomeuser}
+                followingnomeuser={props.followingnomeuser}
+                followersuser={props.followersuser}
             />
-            <Description descricao="Sempre é um belo dia para uma boa leitura"/>
+            <Description descricao={props.descricao}/>
         </div>
     );
 }

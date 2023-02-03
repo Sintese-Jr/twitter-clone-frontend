@@ -8,11 +8,13 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import Tweet from '../components/Tweet/Tweet';
 import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
+import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function explore (props) {
     return (
         <body>
             <Header 
+                tipo="explore"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />
@@ -29,6 +31,9 @@ export default function explore (props) {
                     <Tweet />
                     <Tweet />
                 </div>
+                <MenuMobile
+                    tipo="explore"
+                />
             </div>
         </body>
     );

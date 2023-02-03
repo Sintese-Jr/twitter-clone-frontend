@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import users from "../../mockData/users.json";
 import tweetsDB from "../../mockData/tweetsDB.json";
-import "../../styles/Tweet.css"
-import RespostaTweet from "../RespostaTweet/RespostaTweet"
+import "../../styles/Tweet.css";
+import RespostaTweet from "../RespostaTweet/RespostaTweet";
 import { Link } from "react-router-dom"
 import BotaoTweet from '../utilities/BotaoTweet';
 
 export default function Tweet(props) {
-    console.log(tweetsDB[props.tweetId].answers)
-    const arrayResp = tweetsDB[props.tweetId].answers
+    
+    const arrayResp = tweetsDB[props.tweetId].answers;
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
+
     const listaResp = arrayResp.map(elemento => {
         const usuarioResp = users[elemento.writerId]
         return <RespostaTweet
@@ -21,6 +22,7 @@ export default function Tweet(props) {
             texto={elemento.aswer} />
 
     })
+    
 
     const [curtiu, setCurtiu] = useState(false);
     const [retweetou, setRetweet] = useState(false);
@@ -80,9 +82,12 @@ export default function Tweet(props) {
                     </div>
 
                 </div>
+                
                 <div className="comment">
                     <div className="imageComment">
+
                         <img src={imagemPerfil} />
+
                     </div>
                     <div className="conteudoComment">
                         <form action="...">

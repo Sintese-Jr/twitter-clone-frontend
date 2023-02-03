@@ -9,11 +9,11 @@
 }
 
 .botao-retweet {
-    width: 130px;
-    height: 32px;
+    /* width: 130px; */
+    /* height: 32px; */
     background-color: var(--corbotaotweet);
-    padding-left: 22px;
-    padding-right: 22px;
+    /* padding-left: 22px;
+    padding-right: 22px; */
     display: flex;
     align-items: center;
     justify-content: center;

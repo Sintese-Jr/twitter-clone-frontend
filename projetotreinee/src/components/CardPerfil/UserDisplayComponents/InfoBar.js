@@ -13,8 +13,10 @@ export default function InfoBar(props) {
         <div className="infobar">
             <div className="pessoalinfo">
                 <p className="nomeuser">{props.nomeuser}</p>
-                <p className="followinguser"><span>{props.followingnomeuser}</span> Following</p>
-                <p className="followersuser"><span>{props.followersuser}</span> Followers</p>
+                <div className="followers">
+                    <p className="followinguser"><span>{props.followingnomeuser}</span> Following</p>
+                    <p className="followersuser"><span>{props.followersuser}</span> Followers</p>
+                </div>
             </div>
             <div onClick={handleClick} className="botao">
                 {seguiu === false && <BotaoAzul texto="Seguir" icone="fa-solid fa-user-plus" />}

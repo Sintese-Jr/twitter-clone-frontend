@@ -8,6 +8,7 @@ import QuemSeguir from "../components/QuemSeguir/QuemSeguir";
 import Tweetar from "../components/Tweetar/tweetar"
 import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
+import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function HomePage() {
 
@@ -18,6 +19,7 @@ export default function HomePage() {
             "nome": usuario.nome,
             "fotoPerfil": usuario.fotoPerfil,
             "tweetId": tweetId
+
         }
         return <Tweet 
             key={tweetId}
@@ -28,12 +30,14 @@ export default function HomePage() {
     return (
         <body>
             <Header 
+                tipo="home"
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />
             <div className="corpo-principal-home">
                 <div className="tweet-tamanho-home">
-                    <Tweetar />
+                    <Tweetar 
+                    fotoPerfil={users["root"].fotoPerfil}/>
                     <RetweetTag nome="Daniela Jensen" />
                     {listaTweets}
                 </div>
@@ -41,9 +45,14 @@ export default function HomePage() {
                     <Trends 
                     trends={users["root"].trends}/>
                     <div className="quem-seguir">
-                        <QuemSeguir />
+                        <QuemSeguir 
+                            sugests = {[...users["root"].followSugestions]}
+                        />
                     </div>
                 </div>
+                <MenuMobile
+                    tipo="home"
+                />
             </div>
         </body>
     )

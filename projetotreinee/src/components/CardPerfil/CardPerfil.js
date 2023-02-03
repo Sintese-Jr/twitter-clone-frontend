@@ -7,8 +7,14 @@ export default function CardPerfil(props) {
 
     return (
         <div className="cardperfil">
-            <CapaDisplay />
-            <UserDisplay />
+            <CapaDisplay srcImagemCapa={props.srcImagemCapa}/>
+            <UserDisplay 
+                srcImagemPerfil={props.srcImagemPerfil}
+                nomeuser={props.nomeuser}
+                followingnomeuser={props.followingnomeuser}
+                followersuser={props.followersuser}
+                descricao={props.descricao}
+            />
         </div>
     );
 }
