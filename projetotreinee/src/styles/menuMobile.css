@@ -1,0 +1,55 @@
+@media (min-width: 1025px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        background-color: white;
+        width: 100%;
+        height: 8vh;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+    }
+
+    .pagina {
+        margin: auto;
+    }
+
+    .icon {
+        height: 3.5vh;
+    }
+
+    .selecionado {
+        color: #2F80ED;
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 0.5vh solid #2F80ED;
+        border-radius: 0px 0px 3px 3px;
+    }
+
+    .separar {
+        display: flex;
+        height: 7.6vh;
+        align-items: center;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
+
+}

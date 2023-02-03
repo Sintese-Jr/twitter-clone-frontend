@@ -76,6 +76,7 @@
 }
 
 @media (max-width: 480px) {
+
     .corpo-principal-home {
         width: 90vw;
         height: fit-content;
@@ -84,6 +85,7 @@
         /* grid-template-columns: 2fr 1fr; */
         /* grid-gap: 0 20px; */
         margin-top: 2vh;
+        padding-bottom: 8vh;
     }
     
     .tweet-tamanho-home > .tweet {

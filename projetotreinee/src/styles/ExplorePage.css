@@ -39,6 +39,7 @@
         gap: 0 1.2rem;
         margin: auto;
         margin-top: 2vh;
+        padding-bottom: 8vh;
     }
     
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
@@ -54,7 +55,8 @@
         height: fit-content;
         /* gap: 0 1.2rem; */
         margin: auto;
-        margin-top: 6vh;
+        margin-top: 2vh;
+        padding-bottom: 8vh;
     }
     
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {

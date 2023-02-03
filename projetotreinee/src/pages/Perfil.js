@@ -7,6 +7,7 @@ import Tweet from "../components/Tweet/NewTweet.js"
 import RetweetTag from "../components/utilities/RetweetTag";
 import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
+import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function PerfilPage() {
 
@@ -59,6 +60,9 @@ export default function PerfilPage() {
                     <RetweetTag nome="Daniela Jensen" />
                     {listaTweets}
                 </div>
+                <MenuMobile
+                    tipo="perfil"
+                />
             </div>
         </body>
     );
