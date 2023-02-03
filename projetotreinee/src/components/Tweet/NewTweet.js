@@ -11,6 +11,7 @@ export default function Tweet(props) {
     const arrayResp = tweetsDB[props.tweetId].answers;
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
+
     
     const [showComments, setShow] = useState(true)
     const [curtiu, setCurtiu] = useState(false);
