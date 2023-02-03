@@ -10,7 +10,9 @@
     --fontenotosans: 'Noto Sans', sans-serif;
     --fontepoppins: 'Poppins', sans-serif;
 }
+
 @media screen and (min-width:699px){
+
     .cardperfil {
         display: flex;
         flex-direction: column;

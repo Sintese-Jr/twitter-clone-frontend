@@ -12,21 +12,28 @@ export default function Tweet(props) {
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
 
-    const listaResp = arrayResp.map(elemento => {
-        const usuarioResp = users[elemento.writerId]
-        return <RespostaTweet
-            image={usuarioResp.fotoPerfil}
-            nome={usuarioResp.nome}
-            data={elemento.datas}
-            qtdLikes={elemento.likes}
-            texto={elemento.aswer} />
-
-    })
     
-
+    const [showComments, setShow] = useState(true)
     const [curtiu, setCurtiu] = useState(false);
     const [retweetou, setRetweet] = useState(false);
     const [salvou, setSalvou] = useState(false);
+    const [listaResp, setListaResp] = useState(null);
+
+    function handleClickComment() {
+        setShow(!showComments);
+        if(showComments) {
+            let resp = arrayResp.map(elemento => {
+                const usuarioResp = users[elemento.writerId]
+                 return <RespostaTweet
+                    image={usuarioResp.fotoPerfil}
+                    nome={usuarioResp.nome}
+                    data={elemento.datas}
+                    qtdLikes={elemento.likes}
+                    texto={elemento.aswer} />
+            });
+            setListaResp(resp);
+        } else setListaResp(null);
+    }
 
     function handleClickRetweet() {
         if (retweetou) setRetweet(false);
@@ -66,8 +73,10 @@ export default function Tweet(props) {
                 </div>
                 <div className="iconesPost">
 
-                    <BotaoTweet icone="far fa-comment" texto="Comments" alt="Comentarios" />
-
+                    
+                    <div onClick={handleClickComment}>
+                        <BotaoTweet icone="far fa-comment" texto="Comments" alt="Comentarios" />
+                    </div>
                     <div onClick={handleClickRetweet} className="retweet">
                         {retweetou === false && <BotaoTweet icone="fa-solid fa-retweet" texto="Retweet" alt="Retweet" />}
                         {retweetou === true && <BotaoTweet className="retweeted" icone="fa-solid fa-retweet" cor="verde" texto="Retweeted" alt="Retweeted" />}
@@ -96,7 +105,7 @@ export default function Tweet(props) {
                         </form>
                     </div>
                 </div>
-               {listaResp}
+                {listaResp}
             </div>
         </div>
     );

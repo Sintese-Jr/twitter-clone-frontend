@@ -26,7 +26,7 @@ export default function PerfilPage() {
         const dados = {...tweetsDB[tweetId], 
             "nome": usuario.nome,
             "fotoPerfil": usuario.fotoPerfil,
-            "fotoUsuarioLogado": users["root"].fotoPerfil,
+            "tweetId": tweetId
         }
         return <Tweet 
             key={tweetId}
