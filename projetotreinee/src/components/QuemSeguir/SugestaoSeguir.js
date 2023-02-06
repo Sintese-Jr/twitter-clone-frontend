@@ -22,7 +22,9 @@ export default function SugestaoSeguir({fotoPerfil, nome, seguidores,bio, fotoFu
                     
                      <div className="NomeSeguidores">
                         <Link to={`../perfil/${id}`}>
-                            <div className="Nome">{nome}</div>
+                            <div className="Nome">{
+                            nome.length <= 12 ? nome : `${nome.substring(0,10)}...`
+                            }</div>
                         </Link>
                         <div className="Seguidores">{seguidores} seguidores</div>
                      </div>

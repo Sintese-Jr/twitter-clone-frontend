@@ -11,20 +11,22 @@
 
 @media (min-width: 1025px) {
     .respostaTweet {
-        display: flex;
+        display: grid;
         max-width: 1300px;
+        grid-template-columns: 1fr 8fr;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 10px;
     }
     
     .fotoPerfil {
-        width: 6.6vw;
-        height: 5.8vh;
+        
         padding-right: 0.5rem;
         display: flex;
     }
     
     .fotoPerfil img {
-        width: 100%;
-        height: 100%;
+        width: 55px;
+        height: 55px;
         object-fit: cover;
         border-radius: 0.4rem;
     }
@@ -98,18 +100,19 @@
     .respostaTweet {
         display: flex;
         max-width: 1300px;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 10px;
     }
     
     .fotoPerfil {
-        width: 15vw;
-        height: 5vh;
+        
         padding-right: 0.5rem;
         display: flex;
     }
     
     .fotoPerfil img {
-        width: 100%;
-        height: 100%;
+        width: 40px;
+        height: 40px;
         object-fit: cover;
         border-radius: 0.4rem;
     }
@@ -187,18 +190,19 @@
     .respostaTweet {
         display: flex;
         max-width: 1300px;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 10px;
     }
     
     .fotoPerfil {
-        width: 20vw;
-        height: 5vh;
+        
         padding-right: 0.5rem;
         display: flex;
     }
     
     .fotoPerfil img {
-        width: 100%;
-        height: 100%;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
         border-radius: 0.4rem;
     }
@@ -277,18 +281,19 @@
     .respostaTweet {
         display: flex;
         max-width: 1300px;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 5px;
     }
     
     .fotoPerfil {
-        width: 15vw;
-        height: 4vh;
+        
         padding-right: 0.5rem;
         display: flex;
     }
     
     .fotoPerfil img {
-        width: 100%;
-        height: 100%;
+        width: 20px;
+        height: 20px;
         object-fit: cover;
         border-radius: 0.4rem;
     }

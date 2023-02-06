@@ -75,13 +75,15 @@
     }
 
     #fotoPerfilPrimaria {
-        height: 5vh;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         margin-right: 1vw;
     }
 
     #fotoPerfilSecundaria {
-        height: 5vh;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         margin-right: 1vw;
     }
@@ -186,13 +188,15 @@
     }
 
     #fotoPerfilPrimaria {
-        height: 4vh;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         margin-right: 1vw;
     }
 
     #fotoPerfilSecundaria {
-        height: 4vh;
+        width: 40px;
+        height: 40px;
         border-radius: 8px;
         margin-right: 1vw;
     }
@@ -297,13 +301,15 @@
     }
 
     #fotoPerfilPrimaria {
-        height: 3vh;
+        width: 30px;
+        height: 30px;
         border-radius: 8px;
         margin-right: 1vw;
     }
 
     #fotoPerfilSecundaria {
-        height: 3vh;
+        width: 30px;
+        height: 30px;
         border-radius: 8px;
         margin-right: 1vw;
     }

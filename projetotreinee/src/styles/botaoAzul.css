@@ -8,14 +8,12 @@
     --corbotaoazul: #2F80ED;
 }
 
+
 @media (min-width: 1025px) {
+    
     .botao-azul {
         width: 7.9vw;
-        height: 20px;
         background-color: var(--corbotaoazul);
-        padding-left: 22px;
-        padding-right: 22px;
-        padding-bottom: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,8 +38,8 @@
     .pequeno {
         font-size: 0.75em;
         line-height: 1.0212em;
-        width: 5.9375em;
-        height: 2em;
+        width: 6vw;
+        height: 2vw;
         padding-left: 0.5em;
         padding-right: 0.5em;
         letter-spacing: var(--letterSpacingPadrao);

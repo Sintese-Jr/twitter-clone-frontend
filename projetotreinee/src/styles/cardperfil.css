@@ -50,10 +50,6 @@
         padding-bottom: 20px;
     }
     
-    .infobar > .botao-azul {
-        margin-right: 1.5vw;
-    }
-    
     .userdisplay {
         background-color: white;
         border-radius: 10px;
@@ -134,9 +130,8 @@
     }
     
     .botao{
-        padding-right: 1.5em;
-        padding-top: 2vh;
-        
+       display: flex;
+       align-items: center;
     }
     }
 
