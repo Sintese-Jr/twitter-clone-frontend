@@ -5,18 +5,18 @@ import "../../styles/Tweetar.css"
 export default function Tweetar(props) {
 
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
-
     const [active, setActive] = useState(false);
     const [data, setData] = useState('');
 
-    const childToParent = (childdata) =>{
-        setData(childdata);
-    };
-
+    const handleData = (receivedData) => {
+        setData(receivedData);
+    }
 
 
     function handleClick() {
         setActive(!active);
+        console.log(data);
+
     };
 
     return (
@@ -38,13 +38,13 @@ export default function Tweetar(props) {
                 <div className="area-icone-tweetar">
                     <i className="fa-regular fa-image"></i><span></span>
                     <div className="everyonecanreply" onClick={handleClick}>
-                        <i className="fa-solid fa-earth-americas"></i> <span> {data}</span>
+                        <i className="fa-solid fa-earth-americas"></i> <span>{data}</span>
                     </div>
                 </div>
                 <button>Tweet</button>
             </div>
             <div className="who-can-reply" onClick={handleClick} >
-                {active === true && <WhoCanReply childToParent={childToParent} />}
+                {active === true && <WhoCanReply handleData={handleData} />}
             </div>
         </div>
 
