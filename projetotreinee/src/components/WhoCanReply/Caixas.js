@@ -1,14 +1,13 @@
-import '../../styles/caixas.css'
-import React from 'react';
+import "../../styles/caixas.css";
+import React from "react";
 
-
-export default function Caixas(props) {
-    return (
-        <div className="Caixas">
-            <div className="Everyone">
-            <i class= {"fa-solid "+props.icone}></i> 
-             {props.everyone}
-            </div>
-        </div>
-    );
+export default function Caixas({ handleClick, option }) {
+  return (
+    <div className="Caixas" onClick={handleClick(option)}>
+      <div className="Everyone">
+        <i class={"fa-solid " + option.icon}></i>
+        {option.label}
+      </div>
+    </div>
+  );
 }
