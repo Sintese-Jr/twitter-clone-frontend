@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import FollowBtn from "../utilities/BotaoAzul";
+import FollowBtn from "../utilities/BotaoAzulEstatico"
+import { UserFollowList } from "./UserFollowList";
+import SugestaoSeguir from "../QuemSeguir/SugestaoSeguir"
 
 import "../../styles/FollowList.css";
 
@@ -8,16 +10,11 @@ const userName = "Daniel Jensen";
 
 export function FollowList(open) {
   const [followers, setFollowers] = useState(null);
-  const [following, setFollowing] = useState(false);
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
 
   function toggleActive() {
     setActive(false);
   }
-
-  function handleClick() {
-    setFollowing(!following);
-  };
 
   useEffect(() => {
     async function getFollowers() {
@@ -25,11 +22,11 @@ export function FollowList(open) {
         .then((response) => response.json())
         .then((data) => setFollowers(data.results));
     }
-    if(open)setActive(true);
+    if (open) setActive(true);
     getFollowers();
   }, []);
 
-  if(active) return (
+  if (active) return (
     <aside
       className="follow-list"
       role="dialog"
@@ -64,14 +61,13 @@ export function FollowList(open) {
                       </h3>
                       <p>120k followers</p>
                     </div>
-                    <div className="followBtn" onClick={handleClick}>
-                      {following === false && <FollowBtn icone="fa-solid fa-user-plus" texto="Follow" />}
-                      {following === true && <FollowBtn texto="Following" />}
+                    <div className="followBtn">
+                        <FollowBtn icone="fa-solid fa-user-plus"/>
                     </div>
                   </header>
                   <p className="profile-bio">{`My name is ${follower.name.first} ${follower.name.last}. I live in ${follower.location.country}`}</p>
                 </li>
-              );
+              )
             })
           ) : (
             <p>nothing to see here ;(</p>
