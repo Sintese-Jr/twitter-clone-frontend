@@ -6,16 +6,17 @@ import InfoBar from "./UserDisplayComponents/InfoBar";
 
 export default function UserDisplay(props) {
 
-
     return (
         <div className="userdisplay">
-            <ImagemPerfil /> <InfoBar
-                nomeuser="Daniela Jensen"
-                followingnomeuser="1,370"
-                followersuser="10,5k"
-            />
 
-            <Description descricao="Sempre é um belo dia para uma boa leitura" />
+            <ImagemPerfil srcImagemPerfil={props.srcImagemPerfil}/>
+            <InfoBar
+                nomeuser={props.nomeuser}
+                followingnomeuser={props.followingnomeuser}
+                followersuser={props.followersuser}
+            />
+            <Description descricao={props.descricao}/>
+
         </div>
     );
 }

@@ -6,7 +6,7 @@ export default function CapaDisplay(props) {
 
     return (
         <div className="imagemcapa">
-            <img src={capa}></img>
+            <img src={props.srcImagemCapa}></img>
         </div>
     )
 }

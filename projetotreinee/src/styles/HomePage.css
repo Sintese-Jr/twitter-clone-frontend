@@ -1,22 +1,102 @@
-.corpo-principal-home {
-    width: 74.5vw;
-    height: fit-content;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 0 20px;
-    margin-top: 4vh;
+@media (min-width: 1025px) {
+    .corpo-principal-home {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 0.9fr;
+        grid-gap: 0 20px;
+        margin-top: 4vh;
+    }
+    
+    .tweet-tamanho-home > .tweet {
+        margin-bottom: 3vh;
+    }
+    
+    .quem-seguir {
+        margin-top: 4vh;
+    }
+    
+    .SugestaoSeguir {
+        margin-bottom: 1vh;
+    }
+    
+    .lateral-esquerda {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
 }
 
-.tweet-tamanho-home > .tweet {
-    margin-bottom: 3vh;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .corpo-principal-home {
+        width: 85vw;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        grid-gap: 0 20px;
+        margin-top: 3vh;
+    }
+    
+    .tweet-tamanho-home > .tweet {
+        margin-bottom: 3vh;
+    }
+    
+    .quem-seguir {
+        margin-top: 4vh;
+    }
+    
+    .SugestaoSeguir {
+        margin-bottom: 1vh;
+    } 
 }
 
-.quem-seguir {
-    margin-top: 4vh;
+@media (min-width: 481px) and (max-width: 768px) {
+    .corpo-principal-home {
+        width: 88vw;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 2fr 1.4fr;
+        grid-gap: 0 20px;
+        margin-top: 3vh;
+    }
+    
+    .tweet-tamanho-home > .tweet {
+        margin-bottom: 3vh;
+    }
+    
+    .quem-seguir {
+        margin-top: 4vh;
+    }
+    
+    .SugestaoSeguir {
+        margin-bottom: 1vh;
+    } 
 }
 
-.SugestaoSeguir {
-    margin-bottom: 1vh;
-}
+@media (max-width: 480px) {
 
+    .corpo-principal-home {
+        width: 90vw;
+        height: fit-content;
+        margin: auto;
+        /* display: grid; */
+        /* grid-template-columns: 2fr 1fr; */
+        /* grid-gap: 0 20px; */
+        margin-top: 2vh;
+        padding-bottom: 8vh;
+    }
+    
+    .tweet-tamanho-home > .tweet {
+        margin-bottom: 3vh;
+    }
+    
+    .quem-seguir {
+        margin-top: 4vh;
+    }
+    
+    .SugestaoSeguir {
+        margin-bottom: 1vh;
+    } 
+}

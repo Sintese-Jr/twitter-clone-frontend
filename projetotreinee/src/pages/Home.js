@@ -8,6 +8,7 @@ import QuemSeguir from "../components/QuemSeguir/QuemSeguir";
 import Tweetar from "../components/Tweetar/tweetar"
 import users from "../mockData/users.json";
 import tweetsDB from "../mockData/tweetsDB.json";
+import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function HomePage() {
 
@@ -17,7 +18,8 @@ export default function HomePage() {
         const dados = {...tweetsDB[tweetId], 
             "nome": usuario.nome,
             "fotoPerfil": usuario.fotoPerfil,
-            "fotoUsuarioLogado": users["root"].fotoPerfil,
+            "tweetId": tweetId
+
         }
         return <Tweet 
             key={tweetId}
@@ -48,6 +50,9 @@ export default function HomePage() {
                         />
                     </div>
                 </div>
+                <MenuMobile
+                    tipo="home"
+                />
             </div>
         </body>
     )

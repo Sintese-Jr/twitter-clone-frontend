@@ -23,83 +23,300 @@
   --letterSpacingPadrao: -0.035em;
 }
 
-body,
-html {
-  height: 100%;
+@media (min-width: 1025px) {
+  body,
+  html {
+    height: 100%;
+  }
+  
+  .FotoPerfil {
+    background-color: aqua;
+    /* height: 10%; */
+    width: 12%;
+    border-radius: 0.5em;
+  }
+  
+  .FotoFundo {
+    width: 17.5em;
+    height: 6em;
+    border-radius: 0.5em;
+  }
+  
+  .NomeSeguidoresFollow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2em;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .TextoQuemSeguir {
+    font-family: var(--fontePoppins);
+    font-size: 70%;
+    /* padding-top: 0.8669em; */
+    color: #4f4f4f;
+    font-weight: 600;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Nome {
+    font-family: var(--fontePoppins);
+    font-size: 1em;
+    line-height: 1.5em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+    align-self: flex-start;
+    white-space: nowrap;
+    max-width: 6.875em;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    color: #828282;
+    line-height: 1.0212em;
+    font-size: 0.75em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Bio {
+    max-width: 19.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    color: #828282;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.1875em;
+    font-size: 0.875em;
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .NomeSeguidores {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .Botao{
+    user-select: none;
+    color: #FFF;
+  }  
 }
 
-.FotoPerfil {
-  background-color: aqua;
-  height: 2.5em;
-  width: 2.5em;
-  border-radius: 0.5em;
+@media (min-width: 769px) and (max-width: 1024px) {
+  body,
+  html {
+    height: 100%;
+  }
+  
+  .FotoPerfil {
+    background-color: aqua;
+    /* height: 10%; */
+    width: 12%;
+    border-radius: 0.5em;
+  }
+  
+  .FotoFundo {
+    width: 17.5em;
+    height: 6em;
+    border-radius: 0.5em;
+  }
+  
+  .NomeSeguidoresFollow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2em;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .TextoQuemSeguir {
+    font-family: var(--fontePoppins);
+    font-size: 70%;
+    /* padding-top: 0.8669em; */
+    color: #4f4f4f;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Nome {
+    font-family: var(--fontePoppins);
+    font-size: 1em;
+    line-height: 1.5em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+    align-self: flex-start;
+    white-space: nowrap;
+    max-width: 6.875em;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    color: #828282;
+    line-height: 1.0212em;
+    font-size: 0.75em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Bio {
+    max-width: 19.5em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    color: #828282;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.1875em;
+    font-size: 0.875em;
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .NomeSeguidores {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .Botao{
+    user-select: none;
+    color: #FFF;
+  }  
 }
 
-.FotoFundo {
-  width: 16.6212em;
-  height: 4.8034em;
-  border-radius: 0.5em;
+@media (min-width: 481px) and (max-width: 768px) {
+  body,
+  html {
+    height: 100%;
+  }
+  
+  .FotoPerfil {
+    background-color: aqua;
+    /* height: 10%; */
+    width: 12%;
+    border-radius: 0.5em;
+  }
+  
+  .FotoFundo {
+    width: 17.5em;
+    height: 4em;
+    border-radius: 0.5em;
+  }
+  
+  .NomeSeguidoresFollow {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 1%; */
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .TextoQuemSeguir {
+    font-family: var(--fontePoppins);
+    font-size: 70%;
+    /* padding-top: 0.8669em; */
+    color: #4f4f4f;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Nome {
+    font-family: var(--fontePoppins);
+    font-size: 0.6em;
+    line-height: 1.5em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+    align-self: flex-start;
+    white-space: nowrap;
+    max-width: 6.875em;
+  }
+  
+  .Seguidores {
+    font-family: var(--fonteNotoSans);
+    color: #828282;
+    line-height: 1.0212em;
+    font-size: 0.45em;
+    /*padding-left: 1.0944em;*/
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .Bio {
+    max-width: 20em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #828282;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.1875em;
+    font-size: 0.675em;
+    font-weight: 500;
+    letter-spacing: var(--letterSpacingPadrao);
+  }
+  
+  .NomeSeguidores {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .Botao{
+    user-select: none;
+    color: #FFF;
+  } 
 }
 
-.NomeSeguidoresFollow {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.2em;
-  align-items: center;
-  gap: 0.5em;
+@media (max-width: 480px) {
+  body,
+  html {
+    height: 100%;
+  }
+  
+  .FotoPerfil {
+    display: none;
+  }
+  
+  .FotoFundo {
+    display: none;
+  }
+  
+  .NomeSeguidoresFollow {
+    display: none;
+  }
+  
+  .TextoQuemSeguir {
+    display: none;
+  }
+  
+  .Nome {
+    display: none;
+  }
+  
+  .Seguidores {
+    display: none;
+  }
+  
+  .Bio {
+    display: none;
+  }
+  
+  .NomeSeguidores {
+    display: none;
+  }
+  
+  .Botao{
+    display: none;
+  } 
 }
 
-.TextoQuemSeguir {
-  padding-bottom: 0.5em;
-  padding-top: 0.8669em;
-  color: #4f4f4f;
-  font-weight: 600;
-  letter-spacing: var(--letterSpacingPadrao);
-}
-
-.Nome {
-  font-family: var(--fontePoppins);
-  font-size: 1em;
-  line-height: 1.5em;
-  /*padding-left: 1.0944em;*/
-  font-weight: 500;
-  letter-spacing: var(--letterSpacingPadrao);
-  align-self: flex-start;
-  white-space: nowrap;
-  max-width: 6.875em;
-}
-
-.Seguidores {
-  font-family: var(--fonteNotoSans);
-  color: #828282;
-  line-height: 1.0212em;
-  font-size: 0.75em;
-  /*padding-left: 1.0944em;*/
-  font-weight: 500;
-  letter-spacing: var(--letterSpacingPadrao);
-}
-
-.Bio {
-  max-width: 16.6212em;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  color: #828282;
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.1875em;
-  font-size: 0.875em;
-  font-weight: 500;
-  letter-spacing: var(--letterSpacingPadrao);
-}
-
-.NomeSeguidores {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.Botao{
-  user-select: none;
-  color: #FFF;
-}
 
