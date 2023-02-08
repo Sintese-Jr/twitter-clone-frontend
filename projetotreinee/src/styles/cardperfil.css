@@ -79,12 +79,6 @@
     }
 
     .pessoalinfo {
-
-        position: absolute;
-        top: 42vh;
-        right: 7vw;
-        left: 7vw;
-
         display: flex;
         align-items: center;
         margin: 0;
