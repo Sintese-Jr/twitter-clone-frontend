@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import users from "../../mockData/users.json";
 import tweetsDB from "../../mockData/tweetsDB.json";
 import "../../styles/Tweet.css";
@@ -19,6 +19,10 @@ export default function Tweet(props) {
     const [retweetou, setRetweet] = useState(false);
     const [salvou, setSalvou] = useState(false);
     const [listaResp, setListaResp] = useState(null);
+    
+    useEffect(() => {
+        if(props.saved) setSalvou(true);
+    }, [salvou])
 
     function handleClickComment() {
         setShow(!showComments);

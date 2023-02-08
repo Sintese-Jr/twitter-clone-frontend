@@ -32,7 +32,7 @@
         margin-right: 0%;
     }
     
-    .botao {
+    .botao-search {
         background: #2F80ED;
         border-radius: 4px;
         font-size: 80%;
@@ -46,6 +46,7 @@
         border-style: none;
         text-align: center;
         padding-right: 0px;
+        cursor: pointer;
     }
     
     input[type="search"]::-webkit-search-decoration,

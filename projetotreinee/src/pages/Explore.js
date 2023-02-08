@@ -5,7 +5,7 @@ import "../styles/ExplorePage.css"
 import Header from '../components/Header/header';
 import Menulateral from '../components/Menulateral/Menulateral';
 import SearchBar from '../components/SearchBar/SearchBar';
-import Tweet from '../components/Tweet/Tweet';
+import Tweet from '../components/Tweet/NewTweet';
 import users from "../mockData/users.json";
 import MenuMobile from "../components/MenuMobile/menuMobile";
 import tweetsDB from "../mockData/tweetsDB.json";
@@ -14,7 +14,8 @@ import RetweetTag from "../components/utilities/RetweetTag";
 
 
 export default function explore (props) {
-    const tweetsRecomendados = [...users["root"].tweetsFollowing];
+
+    const tweetsRecomendados = [...users["root"].recommended];
     const listaTweets = tweetsRecomendados.map(tweetId => {
         const usuario = users[tweetsDB[tweetId].writerId];
         const dados = {...tweetsDB[tweetId], 
@@ -49,11 +50,9 @@ export default function explore (props) {
                     <SearchBar />
                     <div className="corpo-principal-home">
                         <div className="tweet-tamanho-home">
-                        <Tweetar 
-                        fotoPerfil={users["root"].fotoPerfil}/>
-                        <RetweetTag nome="Daniela Jensen" />
-                        {listaTweets}
-                    </div>
+                        
+                            {listaTweets}
+                        </div>
                     </div>
                 </div>
                 <MenuMobile

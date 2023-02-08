@@ -7,7 +7,7 @@ function SearchBar () {
         <div className="search">
             <img src={Lupa} alt="Ícone de lupa" className="lupa"></img>
             <input type="search" placeholder="Search" className="texto"></input>
-            <input className="botao" type="button" value="Search"></input>
+            <button className="botao-search">Search</button>
         </div>
     )
 }
