@@ -32,7 +32,8 @@
   .FotoPerfil {
     background-color: aqua;
     /* height: 10%; */
-    width: 12%;
+    width: 40px;
+    height: 40px;
     border-radius: 0.5em;
   }
   
@@ -115,7 +116,8 @@
   .FotoPerfil {
     background-color: aqua;
     /* height: 10%; */
-    width: 12%;
+    width: 30px;
+    height: 30px;
     border-radius: 0.5em;
   }
   
@@ -200,7 +202,8 @@
   .FotoPerfil {
     background-color: aqua;
     /* height: 10%; */
-    width: 12%;
+    width: 20px;
+    height: 20px;
     border-radius: 0.5em;
   }
   

@@ -25,6 +25,7 @@ export default function PerfilPage() {
         const dados = {...tweetsDB[tweetId], 
             "nome": usuario.nome,
             "fotoPerfil": usuario.fotoPerfil,
+            "fotoPerfilRoot": users["root"].fotoPerfil,
             "tweetId": tweetId
         }
         return <Tweet 
@@ -36,8 +37,8 @@ export default function PerfilPage() {
         <body>
             <Header 
                 tipo="perfil"
-                nome={users[perfilAtual].nome} 
-                fotoPerfil={users[perfilAtual].fotoPerfil}
+                nome={users["root"].nome} 
+                fotoPerfil={users["root"].fotoPerfil}
             />
             <CardPerfil 
                 srcImagemCapa={srcImagemCapa}

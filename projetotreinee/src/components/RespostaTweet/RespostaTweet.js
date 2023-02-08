@@ -22,6 +22,7 @@ export default function RespostaTweet(props) {
                     nome={props.nome}
                     data={props.data}
                     texto={props.texto}
+                    id={props.id}
                 />
                 <div className="botaoLike"  onClick={handleClick}>
                     {curtiu === false && <EspacoLikes liked="notLiked" qtdLikes={props.qtdLikes} textoLiked="Like" />}

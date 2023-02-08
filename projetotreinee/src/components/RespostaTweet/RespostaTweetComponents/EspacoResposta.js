@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 export default function EspacoResposta (props) {
     return (
         <div className="espacoResposta">
-            <Link to="/perfil">
+            <Link to={`../perfil/${props.id}`}>
                 <InfoBarResposta
                     nome={props.nome}
                     data={props.data}

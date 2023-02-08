@@ -12,6 +12,17 @@
 }
 
 
+.area-icone-tweetar i{
+    cursor: pointer;
+}
+
+.who-can-reply{
+    padding-left: 8.2em;
+    position: absolute;
+    margin-top: 0.8em;
+}
+
+
 @media (min-width: 1025px) {
     .tweetar {
         width: 52vw;
@@ -48,8 +59,8 @@
     }
     
     .header-img-wrapper img{
-        width: 3.8vw;
-        height: 6.4vh;
+        width: 55px;
+        height: 55px;
         margin-right: 10px;
         object-fit: cover;
         border-radius: 10%;
@@ -149,8 +160,8 @@
     }
     
     .header-img-wrapper img{
-        width: 8vw;
-        height: 7vh;
+        width: 40px;
+        height: 40px;
         margin-right: 10px;
         object-fit: cover;
         border-radius: 10%;
@@ -250,8 +261,8 @@
     }
     
     .header-img-wrapper img{
-        width: 9vw;
-        height: 6.4vh;
+        width: 30px;
+        height: 30px;
         margin-right: 10px;
         object-fit: cover;
         border-radius: 10%;
@@ -362,8 +373,8 @@
     }
     
     .header-img-wrapper img{
-        width: 10vw;
-        height: 6vh;
+        width: 30px;
+        height:30px;
         margin-right: 10px;
         object-fit: cover;
         border-radius: 10%;
