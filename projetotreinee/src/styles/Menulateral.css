@@ -52,12 +52,18 @@
     }
     
     .container2 {
+        cursor: pointer;
+        cursor: pointer;
         background: #FFFFFF;
         display: flex;
         margin: 0px;
         height: 47px;
         border-radius: 8px;
-    }    
+    }  
+    
+    .container2 p:hover{
+        color: #2F80ED;
+    }  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -112,12 +118,17 @@
     }
     
     .container2 {
+        cursor: pointer;
         background: #FFFFFF;
         display: flex;
         margin: 0px;
         height: 47px;
         border-radius: 8px;
     }   
+
+    .container2 p:hover{
+        color: #2F80ED;
+    } 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -173,12 +184,17 @@
     }
     
     .container2 {
+        cursor: pointer;
         background: #FFFFFF;
         display: flex;
         margin: 0px;
         height: 47px;
         border-radius: 8px;
     }   
+
+    .container2 p:hover{
+        color: #2F80ED;
+    } 
 }
 
 @media (max-width: 480px) {
@@ -233,10 +249,16 @@
     }
     
     .container2 {
+        cursor: pointer;
         background: #FFFFFF;
         display: flex;
         margin: 0px;
         height: 47px;
         border-radius: 8px;
     }   
+
+    .container2 p:hover{
+        color: #2F80ED;
+    } 
+ 
 }
