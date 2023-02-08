@@ -1,26 +1,17 @@
 import '../../styles/WhoCanReply.css';
 import Caixas from './Caixas';
-import React from 'react';
+import React, { useState } from 'react';
 
-
-
-function App() {
+function WhoCanReply({ setOption, options }) {
   return (
     <div className="App">
       <div className='container'>
-        <p className= 'who'>Who can reply?</p>
+        <p className='who'>Who can reply?</p>
         <p className='choose'>Choose who can reply to this Tweet.</p>
-        <Caixas
-         everyone = 'Everyone' 
-         icone = "fa-globe"/> 
-         
-        <Caixas
-         everyone = 'People you follow'
-         icone = "fa-user-group"
-        />
+        {options.map(option => <Caixas handleClick={setOption} option={option} />)}
       </div>
     </div>
   );
 }
 
-export default App;
+export default WhoCanReply;

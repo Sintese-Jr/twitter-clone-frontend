@@ -10,7 +10,6 @@ import tweetsDB from "../mockData/tweetsDB.json";
 import MenuMobile from "../components/MenuMobile/menuMobile";
 
 export default function PerfilPage() {
-
     const perfilAtual = window.location.href.split("perfil/")[1];
     const srcImagemCapa = require(`../images/planoFundo/${users[perfilAtual].fotoFundo}`);
     const srcImagemPerfil = require(`../images/fotoPerfil/${users[perfilAtual].fotoPerfil}`);
@@ -33,7 +32,6 @@ export default function PerfilPage() {
             {...dados}
         />
     });
-
     return (
         <body>
             <Header 

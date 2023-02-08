@@ -1,3 +1,4 @@
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -6,7 +7,8 @@
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
+  white-space: nowrap;
+  /* added line */
   border: 0;
 }
 
@@ -20,9 +22,35 @@
   padding-left: 22px;
   padding-right: 25px;
   padding-top: 20px;
-
+  position: absolute;
   width: min(var(--max-width), 100% - (var(--container-padding) * 2));
 }
+
+.modal{
+  border-radius: 8px;
+  top: -9em;
+  padding: 1.56125em;
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+}
+
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(49,49,49,0.8);
+}
+
+.modal-content{
+  position: absolute;
+
+  line-height: 1.4;
+  background: #f1f1f1;
+}
+
 
 .follow-list-header {
   display: flex;
@@ -46,7 +74,7 @@
 }
 
 .profile {
-  --gap: 2.25em;
+  --gap: 1.8em;
   list-style: none;
   border-top: 1px solid #e0e0e0;
   margin-top: 0.5em;
@@ -79,6 +107,8 @@
   padding-top: var(--gap);
   padding-bottom: var(--gap);
 }
+
+
 
 @media (max-width: 40em) {
   .follow-list {

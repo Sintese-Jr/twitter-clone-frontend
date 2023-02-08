@@ -11,6 +11,7 @@
     --fontepoppins: 'Poppins', sans-serif;
 }
 
+
 @media screen and (min-width:699px){
 
     .cardperfil {
@@ -34,13 +35,13 @@
         width: 100vw;
         height: 294px;
     }
-    
-    .imagemcapa > img {
+
+    .imagemcapa>img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    
+
     .infobar {
         display: flex;
         justify-content: space-between;
@@ -49,11 +50,11 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
-    .infobar > .botao-azul {
+
+    .infobar>.botao-azul {
         margin-right: 1.5vw;
     }
-    
+
     .userdisplay {
         background-color: white;
         border-radius: 10px;
@@ -63,7 +64,7 @@
         top: 82%;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
     }
-    
+
     .imagemperfil {
         position: absolute;
         margin-left: 2vw;
@@ -80,15 +81,31 @@
         object-fit: cover;
         border-radius: 8px;
     }
-    
+
     .pessoalinfo {
+
+        position: absolute;
+        top: 42vh;
+        right: 7vw;
+        left: 7vw;
+
         display: flex;
         align-items: center;
         margin: 0;
     }
-    
-    .pessoalinfo > p {
+
+    .followers {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5vh;
+    }
+
+    .pessoalinfo>p {
         margin-right: 2vw;
+    }
+
+    .followers>p {
+        margin-right: 5vh;
     }
     
     .nomeuser {
@@ -96,44 +113,44 @@
         font-weight: 600;
         font-size: 24px;
     }
-    
+
     .followinguser {
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
     }
-    
-    .followinguser > span {
+
+    .followinguser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .followersuser {
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
     }
-    
-    .followersuser > span {
+
+    .followersuser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .description {
         margin-left: 14vw;
         width: 29.6vw;
         position: absolute;
         padding-top: 5px;
-        
+
     }
-    
-    .description > p {
+
+    .description>p {
         color: #828282;
         font-size: 18px;
         margin-top: -7px;
     }
-    
-    .botao{
+
+    .botao {
         padding-right: 1.5em;
         padding-top: 2vh;
         
