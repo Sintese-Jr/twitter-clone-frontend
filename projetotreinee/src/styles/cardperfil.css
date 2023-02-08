@@ -83,8 +83,18 @@
         margin: 0;
     }
     
-    .pessoalinfo > p {
+    .followers {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5vh;
+    }
+
+    .pessoalinfo>p {
         margin-right: 2vw;
+    }
+
+    .followers>p {
+        margin-right: 5vh;
     }
     
     .nomeuser {
@@ -97,6 +107,11 @@
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
+        cursor: pointer;
+    }
+
+    .followinguser:hover {
+        text-decoration: underline;
     }
     
     .followinguser > span {
@@ -118,7 +133,6 @@
     .description {
         margin-left: 14vw;
         width: 29.6vw;
-        position: absolute;
         padding-top: 5px;
         
     }

@@ -11,6 +11,16 @@
   --fontepoppins: "Poppins", sans-serif;
 }
 
+.area-icone-tweetar i{
+    cursor: pointer;
+}
+
+.who-can-reply{
+    padding-left: 8.2em;
+    position: absolute;
+    margin-top: 0.8em;
+}
+
 @media (min-width: 1025px) {
     .tweetar {
         width: 52vw;

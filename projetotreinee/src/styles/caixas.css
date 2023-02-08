@@ -10,6 +10,7 @@
 
 
 .Everyone {
+  cursor: pointer;
   font-family: var(--fonteNotoSans);
   font-size: 12px;
   font-weight: 500;
