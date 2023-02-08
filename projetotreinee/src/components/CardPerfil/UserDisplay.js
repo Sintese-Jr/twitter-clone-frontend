@@ -5,9 +5,10 @@ import ImagemPerfil from "./UserDisplayComponents/ImagemPerfil";
 import InfoBar from "./UserDisplayComponents/InfoBar";
 
 export default function UserDisplay(props) {
-    
+
     return (
         <div className="userdisplay">
+
             <ImagemPerfil srcImagemPerfil={props.srcImagemPerfil}/>
             <InfoBar
                 nomeuser={props.nomeuser}
@@ -15,6 +16,7 @@ export default function UserDisplay(props) {
                 followersuser={props.followersuser}
             />
             <Description descricao={props.descricao}/>
+
         </div>
     );
 }

@@ -17,4 +17,5 @@ export default function BotaoAzulEstatico(props) {
             {active === true &&  <p className="texto-botao-retweet">Seguindo</p>}
         </div>
     )
+
 }

@@ -12,6 +12,7 @@ export default function Tweet(props) {
     const imagemPerfil = require(`../../images/fotoPerfil/${props.fotoPerfil}`);
     const imagemPerfilRoot = require(`../../images/fotoPerfil/${props.fotoPerfilRoot}`);
     const imagemPost = props.imagem ? require(`../../images/imagensPosts/${props.imagem}`) : null;
+
     
     const [showComments, setShow] = useState(true)
     const [curtiu, setCurtiu] = useState(false);

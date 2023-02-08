@@ -14,4 +14,6 @@ export default function Caixas({ handleClick, option }) {
       </div>
     </div>
   );
+
 }
+

@@ -11,6 +11,7 @@
     --fontepoppins: 'Poppins', sans-serif;
 }
 
+
 @media screen and (min-width:699px){
 
     .cardperfil {
@@ -34,13 +35,13 @@
         width: 100vw;
         height: 294px;
     }
-    
-    .imagemcapa > img {
+
+    .imagemcapa>img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    
+
     .infobar {
         display: flex;
         justify-content: space-between;
@@ -59,7 +60,7 @@
         top: 82%;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.274);
     }
-    
+
     .imagemperfil {
         position: absolute;
         margin-left: 2vw;
@@ -76,13 +77,19 @@
         object-fit: cover;
         border-radius: 8px;
     }
-    
+
     .pessoalinfo {
+
+        position: absolute;
+        top: 42vh;
+        right: 7vw;
+        left: 7vw;
+
         display: flex;
         align-items: center;
         margin: 0;
     }
-    
+
     .followers {
         display: flex;
         justify-content: space-between;
@@ -102,7 +109,7 @@
         font-weight: 600;
         font-size: 24px;
     }
-    
+
     .followinguser {
         font-family: var(--fontepoppins);
         font-size: 12px;
@@ -113,31 +120,31 @@
     .followinguser:hover {
         text-decoration: underline;
     }
-    
-    .followinguser > span {
+
+    .followinguser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .followersuser {
         font-family: var(--fontepoppins);
         font-size: 12px;
         color: #828282;
     }
-    
-    .followersuser > span {
+
+    .followersuser>span {
         font-weight: 600;
         color: black;
     }
-    
+
     .description {
         margin-left: 14vw;
         width: 29.6vw;
         padding-top: 5px;
-        
+
     }
-    
-    .description > p {
+
+    .description>p {
         color: #828282;
         font-size: 18px;
         margin-top: -7px;
@@ -146,6 +153,7 @@
     .botao{
        display: flex;
        align-items: center;
+
     }
     }
 

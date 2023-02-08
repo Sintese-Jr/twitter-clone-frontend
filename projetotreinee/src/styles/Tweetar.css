@@ -11,6 +11,7 @@
   --fontepoppins: "Poppins", sans-serif;
 }
 
+
 .area-icone-tweetar i{
     cursor: pointer;
 }
@@ -20,6 +21,7 @@
     position: absolute;
     margin-top: 0.8em;
 }
+
 
 @media (min-width: 1025px) {
     .tweetar {
@@ -120,6 +122,7 @@
     .area-icone-tweetar i{
         cursor: pointer;
     }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -324,6 +327,15 @@
     }
 }
 
+.area-icone-tweetar i{
+    cursor: pointer;
+}
+
+.who-can-reply{
+    padding-left: 8.2em;
+    position: absolute;
+    margin-top: 0.8em;
+}
 @media (max-width: 480px) {
     .tweetar {
         margin: auto;
