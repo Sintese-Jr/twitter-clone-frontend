@@ -26,15 +26,15 @@ export default function Tweetar(props) {
 
   return (
     <div className="tweetar">
-      <div class="feeds-content">
-        <div class="feeds-header">
-          <div class="header-top">
+      <div className="feeds-content">
+        <div className="feeds-header">
+          <div className="header-top">
             <h4>Tweet Something</h4>
           </div>
         </div>
       </div>
       <div className="header-post">
-        <div class="header-img-wrapper">
+        <div className="header-img-wrapper">
           <img src={imagemPerfil} />
           <input type="text" placeholder="What's happening?" />
         </div>
