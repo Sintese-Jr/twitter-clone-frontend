@@ -7,7 +7,7 @@ export default function MenuPerfil() {
 
     return (
         <div className="menuperfil">
-            <Link to="../perfil/root">
+            <Link to="../perfil/root" reloadDocument>
                 <CardMenu icone="fa-solid fa-circle-user" texto="My Profile" cor="gray"/>
             </Link>
             <CardMenu icone ="fa-solid fa-user-group" texto="Group Chat" cor="gray"/>

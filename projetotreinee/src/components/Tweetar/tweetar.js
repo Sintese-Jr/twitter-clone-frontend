@@ -47,7 +47,7 @@ export default function Tweetar(props) {
             <i className={`fa-solid ${option.icon}`}></i><span>{option.label}</span>
           </div>
         </div>
-        <button>Tweet</button>
+        <button className="botao-tweetar">Tweet</button>
       </div>
       <div className="who-can-reply" onClick={handleClick}>
         {active === true && <WhoCanReply setOption={setOption} options={options} />}

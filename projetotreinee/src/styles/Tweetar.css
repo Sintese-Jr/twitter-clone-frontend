@@ -87,7 +87,11 @@
         height: 2em;
         cursor: pointer;
     }
-    
+    .botao-tweetar:hover {
+        color: #2F80ED;
+        background-color: #fff;
+        border: 2px solid #2F80ED;
+    }
     .bottom-part span {
      margin-right: 1em ;
     }

@@ -13,6 +13,7 @@
     
     .botao-azul {
         width: 7.9vw;
+        padding: 5px;
         background-color: var(--corbotaoazul);
         display: flex;
         align-items: center;
@@ -20,6 +21,7 @@
         border-radius: 4px;
         cursor: pointer;
         color: white;
+        margin-right: 10px;
     }
     
     .fa-user-plus {
