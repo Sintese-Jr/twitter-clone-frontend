@@ -29,7 +29,7 @@ export default function HomePage() {
     });
 
     return (
-        <body>
+        <div>
             <Header 
                 tipo="home"
                 nome={users["root"].nome} 
@@ -55,6 +55,6 @@ export default function HomePage() {
                     tipo="home"
                 />
             </div>
-        </body>
+        </div>
     )
 }

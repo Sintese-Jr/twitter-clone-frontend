@@ -34,7 +34,7 @@ export default function PerfilPage() {
         />
     });
     return (
-        <body>
+        <div>
             <Header 
                 tipo="perfil"
                 nome={users["root"].nome} 
@@ -63,6 +63,6 @@ export default function PerfilPage() {
                     tipo="perfil"
                 />
             </div>
-        </body>
+        </div>
     );
 }
