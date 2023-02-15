@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Back-end do projeto treinee ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "nodemon  index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sintese-Jr/twitter-clone-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sintese-Jr/twitter-clone-frontend/issues"
+  },
+  "homepage": "https://github.com/Sintese-Jr/twitter-clone-frontend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "consign": "^0.1.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
