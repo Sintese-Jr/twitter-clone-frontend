@@ -4,6 +4,7 @@ import HomePage from "./pages/Home";
 import PerfilPage from "./pages/Perfil";
 import Bookmarks from "./pages/Bookmarks";
 import Explore from "./pages/Explore";
+import LoginPage from "./pages/Login";
 
 export default function App() {
     return (
