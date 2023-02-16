@@ -36,7 +36,7 @@ export default function BookmarksPage() {
                 nome={users["root"].nome} 
                 fotoPerfil={users["root"].fotoPerfil}
             />
-            <div className="corpo-principal">
+            <div className="principalExplore">
                 <Menulateral 
                     primeiro="Tweets"
                     segundo="Tweets & replies"

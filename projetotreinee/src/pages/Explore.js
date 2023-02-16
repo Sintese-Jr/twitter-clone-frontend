@@ -48,7 +48,7 @@ export default function explore (props) {
                 />
                 <div className="menuPrincipalExplore">
                     <SearchBar />
-                    <div className="corpo-principal-home">
+                    <div className="corpo-principal-explore">
                         <div className="tweet-tamanho-home">
                         
                             {listaTweets}
