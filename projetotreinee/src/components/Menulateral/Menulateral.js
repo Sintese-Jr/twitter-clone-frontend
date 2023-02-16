@@ -5,7 +5,6 @@ function Menulateral(props) {
   return (
     <div className="container-menu">
         <div classNameName="container2">
-            <p className="canto"></p>
             <p className="tweets">{props.primeiro}</p>  
         </div>
         <div className="container2">

@@ -5,10 +5,10 @@
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
         border-radius: 8px;
-        width: 100%;
+        width: 52vw;
         height: 8vh;
         display: flex;
-        margin: auto;
+        
     }
     
     .texto {
