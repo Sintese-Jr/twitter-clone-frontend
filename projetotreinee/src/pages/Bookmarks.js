@@ -48,7 +48,7 @@ export default function BookmarksPage() {
                     {listaTweets}
                 </div>
                 <MenuMobile
-                    tipo="perfil"
+                    tipo="bookmarks"
                 />
             </div>
                 
