@@ -1,0 +1,2 @@
+Coloquem nessa pasta qualquer tipo de validação dos dados antes de adicioná-los 
+ou buscá-los no banco de dados

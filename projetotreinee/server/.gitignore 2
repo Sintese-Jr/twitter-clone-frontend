@@ -1,4 +1,0 @@
-.env
-node_modules
-./controllers/tweet.js
-./controllers/user.js
