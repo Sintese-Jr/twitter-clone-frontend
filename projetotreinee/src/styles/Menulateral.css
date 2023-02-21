@@ -53,9 +53,10 @@
     
     .container2 {
         cursor: pointer;
-        cursor: pointer;
         background: #FFFFFF;
         display: flex;
+        align-items: center;
+        flex-direction: row;
         margin: 0px;
         height: 47px;
         border-radius: 8px;
