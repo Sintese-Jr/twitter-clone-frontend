@@ -1,5 +1,7 @@
 @media (min-width: 1025px) {
-    .corpo-principal {
+
+    .corpo-principal-bookmarks{
+
         margin-top: 4vh;
     }
     /* .tweet-tamanho{
@@ -8,7 +10,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .pagina-principal{
+    .corpo-principal-bookmarks{
         display: grid;
         width: fit-content;
         height: fit-content;

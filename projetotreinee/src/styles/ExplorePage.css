@@ -62,4 +62,8 @@
     .menuPrincipalExplore > .tweet, .menuPrincipalExplore > .search {
         margin-bottom: 2vh;
     }
+
+    .menuPrincipalExplore {
+        margin-top: 2vh;
+    }
 }
