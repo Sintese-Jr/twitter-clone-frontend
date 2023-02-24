@@ -25,7 +25,7 @@
     .followers{
         display: flex;
         margin-left: 30px;
-        margin-top: 0.3vh;
+        margin-top: 0.4vh;
     }
     .followers > p{
         margin-right: 30px;
@@ -147,7 +147,8 @@
     .botao{
        display: flex;
        align-items: center;
-
+       position: absolute;
+       left: 85%;
     }
     }
 
@@ -290,9 +291,8 @@
         .botao{
             padding-top: 13px;
             position: absolute;
-            top: 60vh;
-            margin-top: 23vh;
-            right: 38vw;
+            top: 87%;
+            right: 41%;
         }
     }
     @media screen and (max-width:569px){
@@ -362,7 +362,7 @@
         
         .pessoalinfo {
             position: absolute;
-            top:42vh;
+            top:65%;
             right: 7vw;
             left: 7vw;
             display: flex;
@@ -420,22 +420,21 @@
             width: 27.6vw;
             position: absolute;
             padding-top: 5px;
-            top: 50.3vh;
+            top: 76.3%;
             margin-left: 14vw;
             margin-right: 7vw;
         }
         
         .description > p {
             color: #828282;
-            font-size: 18px;
+            font-size: 16px;
             width: 50vw
         }
         
         .botao{
             padding-top: 13px;
             position: absolute;
-            top: 60vh;
-            margin-top: 23vh;
-            right: 37vw;
+            top: 88%;
+            right: 37%;
         }
     }
